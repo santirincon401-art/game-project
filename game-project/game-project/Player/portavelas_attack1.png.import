@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjgi2macgiqrh"
-path="res://.godot/imported/Vela.png-f9cb119f7f56b745bf8e10bf64668315.ctex"
+uid="uid://6i2m5lk7dvxo"
+path="res://.godot/imported/portavelas_attack1.png-940b677d139ab3b8f341fd93294ce702.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Vela/Vela.png"
-dest_files=["res://.godot/imported/Vela.png-f9cb119f7f56b745bf8e10bf64668315.ctex"]
+source_file="res://Player/portavelas_attack1.png"
+dest_files=["res://.godot/imported/portavelas_attack1.png-940b677d139ab3b8f341fd93294ce702.ctex"]
 
 [params]
 
