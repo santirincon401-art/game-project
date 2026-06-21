@@ -1,10 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1781563416
+::res://::1782083186
 City.tscn::PackedScene::1380969642031298231::1781551220::0::1::::<><><>0<>0<><>::uid://b3w674xv0nysb::::res://Player/Player.tscn<>uid://byaqhaq0djam1::::res://Vela/Vela.tscn
 icon.svg::CompressedTexture2D::6369439271467890276::1781551220::1781551293::1::::<><><>0<>0<>63585541946b7a5862f70fd14cf03499<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Player/::1781563070
-character_body_2d.gd::GDScript::586156032652836441::1781551220::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Player.tscn::PackedScene::4399065548023787293::1781563070::0::1::::<><><>0<>0<><>::uid://il650jo3m4u4::::res://Player/character_body_2d.gd<>uid://lhpo51qsn6by::::res://Player/portavelas_walk.png<>uid://bp71wfk82vyve::::res://Player/portavelas_idle.png
+::res://Player/::1781566557
+character_body_2d.gd::GDScript::586156032652836441::1781566183::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::4399065548023787293::1781566557::0::1::::<><><>0<>0<><>::uid://il650jo3m4u4::::res://Player/character_body_2d.gd<>uid://lhpo51qsn6by::::res://Player/portavelas_walk.png<>uid://6i2m5lk7dvxo::::res://Player/portavelas_attack1.png<>uid://bp71wfk82vyve::::res://Player/portavelas_idle.png
 portavelas_attack1.png::CompressedTexture2D::2194031556333648264::1781563064::1781563064::1::::<><><>0<>0<>8909480dbba68e6f6aba5e71a8764176<>res://.godot/imported/portavelas_attack1.png-940b677d139ab3b8f341fd93294ce702.ctex::
 portavelas_idle.png::CompressedTexture2D::3506931635272434214::1781551220::1781551293::1::::<><><>0<>0<>260612fa7a0f90cfffa373d91723bfe7<>res://.godot/imported/portavelas_idle.png-c427030628c3625ad903b07be31ac319.ctex::
 portavelas_walk.png::CompressedTexture2D::787465296919926974::1781551220::1781551293::1::::<><><>0<>0<>b2795b11bdab3e1ca36d146efffcc9b7<>res://.godot/imported/portavelas_walk.png-e4cc14d8886f8094e0327a1c7cc82d4d.ctex::
