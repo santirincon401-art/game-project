@@ -33,7 +33,10 @@ func _physics_process(_delta):
 
 	move_and_slide()
 
-	
+func hacer_dano():
+	for body in $Area2D.get_overlapping_bodies():
+		if body.is_in_group("enemigo"):
+			body.recibir_dano(1)
 
 
 func _on_animated_sprite_2d_animation_finished() -> void:

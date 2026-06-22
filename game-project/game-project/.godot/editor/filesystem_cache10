@@ -1,16 +1,16 @@
-63f7b34db8d8cdea90c76aacccf841ec
-::res://::1782083186
-City.tscn::PackedScene::1380969642031298231::1781551220::0::1::::<><><>0<>0<><>::uid://b3w674xv0nysb::::res://Player/Player.tscn<>uid://byaqhaq0djam1::::res://Vela/Vela.tscn
-icon.svg::CompressedTexture2D::6369439271467890276::1781551220::1781551293::1::::<><><>0<>0<>63585541946b7a5862f70fd14cf03499<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Player/::1781566557
-character_body_2d.gd::GDScript::586156032652836441::1781566183::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Player.tscn::PackedScene::4399065548023787293::1781566557::0::1::::<><><>0<>0<><>::uid://il650jo3m4u4::::res://Player/character_body_2d.gd<>uid://lhpo51qsn6by::::res://Player/portavelas_walk.png<>uid://6i2m5lk7dvxo::::res://Player/portavelas_attack1.png<>uid://bp71wfk82vyve::::res://Player/portavelas_idle.png
-portavelas_attack1.png::CompressedTexture2D::2194031556333648264::1781563064::1781563064::1::::<><><>0<>0<>8909480dbba68e6f6aba5e71a8764176<>res://.godot/imported/portavelas_attack1.png-940b677d139ab3b8f341fd93294ce702.ctex::
-portavelas_idle.png::CompressedTexture2D::3506931635272434214::1781551220::1781551293::1::::<><><>0<>0<>260612fa7a0f90cfffa373d91723bfe7<>res://.godot/imported/portavelas_idle.png-c427030628c3625ad903b07be31ac319.ctex::
-portavelas_walk.png::CompressedTexture2D::787465296919926974::1781551220::1781551293::1::::<><><>0<>0<>b2795b11bdab3e1ca36d146efffcc9b7<>res://.godot/imported/portavelas_walk.png-e4cc14d8886f8094e0327a1c7cc82d4d.ctex::
-::res://Vela/::1781551293
-pixil-frame-0 (6).png::CompressedTexture2D::5111113424586995756::1781551220::1781551293::1::::<><><>0<>0<>948a37079232d4a4b02b7590fa29a7d5<>res://.godot/imported/pixil-frame-0 (6).png-f0b07b71f51a25d0a16b642e0d7e02c1.ctex::
-static_body_2d.gd::GDScript::4509445582018708300::1781551220::0::1::::<>StaticBody2D<><>0<>0<><>::
-vela 2.png::CompressedTexture2D::7177791915072710649::1781551220::1781551293::1::::<><><>0<>0<>e7cf4c65ba0a9833a8fd5e35a8705230<>res://.godot/imported/vela 2.png-3e00ba2495dab544c3a897ee9bc47404.ctex::
-Vela.png::CompressedTexture2D::3031041125716739177::1781551220::1781551293::1::::<><><>0<>0<>2fb28a7866c19c3f7d2daeabc82cd6ca<>res://.godot/imported/Vela.png-f9cb119f7f56b745bf8e10bf64668315.ctex::
-Vela.tscn::PackedScene::4071936929304595402::1781551220::0::1::::<><><>0<>0<><>::uid://b5in563u6ntua::::res://Vela/static_body_2d.gd<>uid://dai8gi466d5gn::::res://Vela/vela 2.png<>uid://ce24j52u1abu7::::res://Vela/pixil-frame-0 (6).png<>uid://bjgi2macgiqrh::::res://Vela/Vela.png
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1782084738
+City.tscn::PackedScene::1380969642031298231::1782084358::0::1::::<><><>0<>0<><>::uid://b3w674xv0nysb::::res://Player/Player.tscn<>uid://byaqhaq0djam1::::res://Vela/Vela.tscn
+icon.svg::CompressedTexture2D/CompressedTexture2D::6369439271467890276::1782084358::1782084740::1::::<><><>0<>0<>612114125e75ab3c133b8dccd57e85ae<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Player/::1782084358
+character_body_2d.gd::GDScript::586156032652836441::1782084358::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::4399065548023787293::1782084358::0::1::::<><><>0<>0<><>::uid://il650jo3m4u4::::res://Player/character_body_2d.gd<>uid://lhpo51qsn6by::::res://Player/portavelas_walk.png<>uid://6i2m5lk7dvxo::::res://Player/portavelas_attack1.png<>uid://bp71wfk82vyve::::res://Player/portavelas_idle.png
+portavelas_attack1.png::CompressedTexture2D/CompressedTexture2D::2194031556333648264::1782084358::1782084740::1::::<><><>0<>0<>d95d9ebae853991fca5b42ca27d53acf<>res://.godot/imported/portavelas_attack1.png-940b677d139ab3b8f341fd93294ce702.ctex::
+portavelas_idle.png::CompressedTexture2D/CompressedTexture2D::3506931635272434214::1782084358::1782084740::1::::<><><>0<>0<>261e9619c703f8bd5312c42f1dbef1b2<>res://.godot/imported/portavelas_idle.png-c427030628c3625ad903b07be31ac319.ctex::
+portavelas_walk.png::CompressedTexture2D/CompressedTexture2D::787465296919926974::1782084358::1782084740::1::::<><><>0<>0<>7cdaa1491d4881fc2df5f4921b0b901c<>res://.godot/imported/portavelas_walk.png-e4cc14d8886f8094e0327a1c7cc82d4d.ctex::
+::res://Vela/::1782084358
+pixil-frame-0 (6).png::CompressedTexture2D/CompressedTexture2D::5111113424586995756::1782084358::1782084740::1::::<><><>0<>0<>8b96529f1b8372764e53cb1593942828<>res://.godot/imported/pixil-frame-0 (6).png-f0b07b71f51a25d0a16b642e0d7e02c1.ctex::
+static_body_2d.gd::GDScript::4509445582018708300::1782084358::0::1::::<>StaticBody2D<><>0<>0<><>::
+vela 2.png::CompressedTexture2D/CompressedTexture2D::7177791915072710649::1782084358::1782084740::1::::<><><>0<>0<>6b07d53fb28600f68aa0a2c709f45b7f<>res://.godot/imported/vela 2.png-3e00ba2495dab544c3a897ee9bc47404.ctex::
+Vela.png::CompressedTexture2D/CompressedTexture2D::3031041125716739177::1782084358::1782084740::1::::<><><>0<>0<>c64ab16a36709d89c8f83adf4294ebc0<>res://.godot/imported/Vela.png-f9cb119f7f56b745bf8e10bf64668315.ctex::
+Vela.tscn::PackedScene::4071936929304595402::1782084358::0::1::::<><><>0<>0<><>::uid://b5in563u6ntua::::res://Vela/static_body_2d.gd<>uid://dai8gi466d5gn::::res://Vela/vela 2.png<>uid://ce24j52u1abu7::::res://Vela/pixil-frame-0 (6).png<>uid://bjgi2macgiqrh::::res://Vela/Vela.png

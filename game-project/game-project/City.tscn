@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://tw7mrxnenj5p"]
+[gd_scene load_steps=4 format=3 uid="uid://tw7mrxnenj5p"]
 
 [ext_resource type="PackedScene" uid="uid://b3w674xv0nysb" path="res://Player/Player.tscn" id="1_0d5ds"]
 [ext_resource type="PackedScene" uid="uid://byaqhaq0djam1" path="res://Vela/Vela.tscn" id="2_1lbi8"]
+[ext_resource type="PackedScene" uid="uid://c11cugnwonpis" path="res://enemigo1.tscn" id="3_1lbi8"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -9,13 +10,43 @@
 position = Vector2(160, 120)
 
 [node name="Node2D" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(319, 297)
+position = Vector2(487, 136)
 
 [node name="Node2D2" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(741, 122)
+position = Vector2(111, 356)
 
 [node name="Node2D3" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(794, 498)
+position = Vector2(-208, 121)
 
 [node name="Node2D4" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(441, 529)
+position = Vector2(161, -225)
+
+[node name="Node2D5" parent="." instance=ExtResource("2_1lbi8")]
+position = Vector2(-405, -289)
+
+[node name="Node2D6" parent="." instance=ExtResource("2_1lbi8")]
+position = Vector2(-591, 455)
+
+[node name="Node2D7" parent="." instance=ExtResource("2_1lbi8")]
+position = Vector2(639, 539)
+
+[node name="Node2D8" parent="." instance=ExtResource("2_1lbi8")]
+position = Vector2(855, -183)
+
+[node name="Node2D9" parent="." instance=ExtResource("3_1lbi8")]
+position = Vector2(259, 583)
+
+[node name="Node2D10" parent="." instance=ExtResource("3_1lbi8")]
+position = Vector2(-360, -36)
+
+[node name="Node2D11" parent="." instance=ExtResource("3_1lbi8")]
+position = Vector2(563, -332)
+
+[node name="Node2D12" parent="." instance=ExtResource("3_1lbi8")]
+position = Vector2(726, 214)
+
+[node name="Node2D13" parent="." instance=ExtResource("3_1lbi8")]
+position = Vector2(-246, 446)
+
+[node name="Node2D14" parent="." instance=ExtResource("3_1lbi8")]
+position = Vector2(20, -389)

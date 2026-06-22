@@ -132,21 +132,21 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Personaje" type="Node2D"]
+[node name="Jugador" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="Jugador" type="CharacterBody2D" parent="."]
 script = ExtResource("1_q3lat")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador"]
 position = Vector2(1, 1)
 shape = SubResource("CapsuleShape2D_8g4oa")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(-1.1920929e-07, -19)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Jugador"]
+position = Vector2(-1.19209e-07, -19)
 scale = Vector2(2.41, 2.15)
 sprite_frames = SubResource("SpriteFrames_3mea3")
 animation = &"ataque"
-frame = 5
-frame_progress = 1.0
 
-[connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
+[node name="Camera2D" type="Camera2D" parent="Jugador"]
+
+[connection signal="animation_finished" from="Jugador/AnimatedSprite2D" to="Jugador" method="_on_animated_sprite_2d_animation_finished"]
