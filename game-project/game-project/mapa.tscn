@@ -1,0 +1,329 @@
+[gd_scene load_steps=2 format=3 uid="uid://t17j1fhrg3k5"]
+
+[ext_resource type="PackedScene" uid="uid://ca8gcafq06ivb" path="res://ladrillo.tscn" id="1_2jh14"]
+
+[node name="Mapa" type="Node2D"]
+
+[node name="Ladrillo" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(47, 46)
+
+[node name="Ladrillo" parent="Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(282, 1)
+
+[node name="Ladrillo3" parent="Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(376, 0)
+
+[node name="Ladrillo6" parent="Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(470, 2)
+
+[node name="Ladrillo" parent="Ladrillo/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(96, -2)
+
+[node name="Ladrillo3" parent="Ladrillo/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(190, -3)
+
+[node name="Ladrillo6" parent="Ladrillo/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(284, -1)
+
+[node name="Ladrillo2" parent="Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(849, -4)
+
+[node name="Ladrillo" parent="Ladrillo/Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(282, 1)
+
+[node name="Ladrillo3" parent="Ladrillo/Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(376, 0)
+
+[node name="Ladrillo6" parent="Ladrillo/Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(470, 2)
+
+[node name="Ladrillo" parent="Ladrillo/Ladrillo2/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(96, -2)
+
+[node name="Ladrillo3" parent="Ladrillo/Ladrillo2/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(190, -3)
+
+[node name="Ladrillo6" parent="Ladrillo/Ladrillo2/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(284, -1)
+
+[node name="Ladrillo4" parent="Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(943, -5)
+
+[node name="Ladrillo7" parent="Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(1037, -3)
+
+[node name="Ladrillo" parent="Ladrillo/Ladrillo7" instance=ExtResource("1_2jh14")]
+position = Vector2(661, -4)
+
+[node name="Ladrillo" parent="Ladrillo/Ladrillo7/Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(282, 1)
+
+[node name="Ladrillo3" parent="Ladrillo/Ladrillo7/Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(376, 0)
+
+[node name="Ladrillo6" parent="Ladrillo/Ladrillo7/Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(470, 2)
+
+[node name="Ladrillo" parent="Ladrillo/Ladrillo7/Ladrillo/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(96, -2)
+
+[node name="Ladrillo3" parent="Ladrillo/Ladrillo7/Ladrillo/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(190, -3)
+
+[node name="Ladrillo6" parent="Ladrillo/Ladrillo7/Ladrillo/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(284, -1)
+
+[node name="Ladrillo3" parent="Ladrillo/Ladrillo7" instance=ExtResource("1_2jh14")]
+position = Vector2(755, -5)
+
+[node name="Ladrillo6" parent="Ladrillo/Ladrillo7" instance=ExtResource("1_2jh14")]
+position = Vector2(849, -3)
+
+[node name="Ladrillo2" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-46, 140)
+
+[node name="Ladrillo2" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2639, -19)
+
+[node name="Ladrillo4" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2640, 76)
+
+[node name="Ladrillo5" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2640, 170)
+
+[node name="Ladrillo7" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2639, 264)
+
+[node name="Ladrillo8" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2640, 359)
+
+[node name="Ladrillo9" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2640, 453)
+
+[node name="Ladrillo2" parent="Ladrillo2/Ladrillo9" instance=ExtResource("1_2jh14")]
+position = Vector2(1, 95)
+
+[node name="Ladrillo4" parent="Ladrillo2/Ladrillo9" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 190)
+
+[node name="Ladrillo5" parent="Ladrillo2/Ladrillo9" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 284)
+
+[node name="Ladrillo10" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2642, 834)
+
+[node name="Ladrillo11" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2643, 929)
+
+[node name="Ladrillo12" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2643, 1023)
+
+[node name="Ladrillo13" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2642, 1117)
+
+[node name="Ladrillo14" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2643, 1212)
+
+[node name="Ladrillo15" parent="Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(2643, 1306)
+
+[node name="Ladrillo2" parent="Ladrillo2/Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(1, 95)
+
+[node name="Ladrillo4" parent="Ladrillo2/Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 190)
+
+[node name="Ladrillo5" parent="Ladrillo2/Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 284)
+
+[node name="Ladrillo3" parent="Ladrillo2/Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(5, 378)
+
+[node name="Ladrillo6" parent="Ladrillo2/Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(6, 473)
+
+[node name="Ladrillo7" parent="Ladrillo2/Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(6, 567)
+
+[node name="Ladrillo8" parent="Ladrillo2/Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(5, 661)
+
+[node name="Ladrillo9" parent="Ladrillo2/Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(6, 756)
+
+[node name="Ladrillo10" parent="Ladrillo2/Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(6, 850)
+
+[node name="Ladrillo2" parent="Ladrillo2/Ladrillo15/Ladrillo10" instance=ExtResource("1_2jh14")]
+position = Vector2(1, 95)
+
+[node name="Ladrillo4" parent="Ladrillo2/Ladrillo15/Ladrillo10" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 190)
+
+[node name="Ladrillo5" parent="Ladrillo2/Ladrillo15/Ladrillo10" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 284)
+
+[node name="Ladrillo3" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(141, 45)
+
+[node name="Ladrillo4" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-45, 235)
+
+[node name="Ladrillo5" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-45, 329)
+
+[node name="Ladrillo6" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(235, 47)
+
+[node name="Ladrillo7" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-46, 423)
+
+[node name="Ladrillo8" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-45, 518)
+
+[node name="Ladrillo9" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-45, 612)
+
+[node name="Ladrillo2" parent="Ladrillo9" instance=ExtResource("1_2jh14")]
+position = Vector2(1, 95)
+
+[node name="Ladrillo4" parent="Ladrillo9" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 190)
+
+[node name="Ladrillo5" parent="Ladrillo9" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 284)
+
+[node name="Ladrillo10" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-43, 993)
+
+[node name="Ladrillo11" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-42, 1088)
+
+[node name="Ladrillo12" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-42, 1182)
+
+[node name="Ladrillo13" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-43, 1276)
+
+[node name="Ladrillo14" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-42, 1371)
+
+[node name="Ladrillo15" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(-42, 1465)
+
+[node name="Ladrillo2" parent="Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(1, 95)
+
+[node name="Ladrillo4" parent="Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 190)
+
+[node name="Ladrillo5" parent="Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 284)
+
+[node name="Ladrillo3" parent="Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(5, 378)
+
+[node name="Ladrillo6" parent="Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(6, 473)
+
+[node name="Ladrillo7" parent="Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(6, 567)
+
+[node name="Ladrillo8" parent="Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(5, 661)
+
+[node name="Ladrillo9" parent="Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(6, 756)
+
+[node name="Ladrillo10" parent="Ladrillo15" instance=ExtResource("1_2jh14")]
+position = Vector2(6, 850)
+
+[node name="Ladrillo2" parent="Ladrillo15/Ladrillo10" instance=ExtResource("1_2jh14")]
+position = Vector2(1, 95)
+
+[node name="Ladrillo4" parent="Ladrillo15/Ladrillo10" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 190)
+
+[node name="Ladrillo5" parent="Ladrillo15/Ladrillo10" instance=ExtResource("1_2jh14")]
+position = Vector2(2, 284)
+
+[node name="Ladrillo16" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(59, 2688)
+
+[node name="Ladrillo" parent="Ladrillo16" instance=ExtResource("1_2jh14")]
+position = Vector2(282, 1)
+
+[node name="Ladrillo3" parent="Ladrillo16" instance=ExtResource("1_2jh14")]
+position = Vector2(376, 0)
+
+[node name="Ladrillo6" parent="Ladrillo16" instance=ExtResource("1_2jh14")]
+position = Vector2(470, 2)
+
+[node name="Ladrillo" parent="Ladrillo16/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(96, -2)
+
+[node name="Ladrillo3" parent="Ladrillo16/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(190, -3)
+
+[node name="Ladrillo6" parent="Ladrillo16/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(284, -1)
+
+[node name="Ladrillo2" parent="Ladrillo16" instance=ExtResource("1_2jh14")]
+position = Vector2(849, -4)
+
+[node name="Ladrillo" parent="Ladrillo16/Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(282, 1)
+
+[node name="Ladrillo3" parent="Ladrillo16/Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(376, 0)
+
+[node name="Ladrillo6" parent="Ladrillo16/Ladrillo2" instance=ExtResource("1_2jh14")]
+position = Vector2(470, 2)
+
+[node name="Ladrillo" parent="Ladrillo16/Ladrillo2/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(96, -2)
+
+[node name="Ladrillo3" parent="Ladrillo16/Ladrillo2/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(190, -3)
+
+[node name="Ladrillo6" parent="Ladrillo16/Ladrillo2/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(284, -1)
+
+[node name="Ladrillo4" parent="Ladrillo16" instance=ExtResource("1_2jh14")]
+position = Vector2(943, -5)
+
+[node name="Ladrillo7" parent="Ladrillo16" instance=ExtResource("1_2jh14")]
+position = Vector2(1037, -3)
+
+[node name="Ladrillo" parent="Ladrillo16/Ladrillo7" instance=ExtResource("1_2jh14")]
+position = Vector2(661, -4)
+
+[node name="Ladrillo" parent="Ladrillo16/Ladrillo7/Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(282, 1)
+
+[node name="Ladrillo3" parent="Ladrillo16/Ladrillo7/Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(376, 0)
+
+[node name="Ladrillo6" parent="Ladrillo16/Ladrillo7/Ladrillo" instance=ExtResource("1_2jh14")]
+position = Vector2(470, 2)
+
+[node name="Ladrillo" parent="Ladrillo16/Ladrillo7/Ladrillo/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(96, -2)
+
+[node name="Ladrillo3" parent="Ladrillo16/Ladrillo7/Ladrillo/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(190, -3)
+
+[node name="Ladrillo6" parent="Ladrillo16/Ladrillo7/Ladrillo/Ladrillo6" instance=ExtResource("1_2jh14")]
+position = Vector2(284, -1)
+
+[node name="Ladrillo3" parent="Ladrillo16/Ladrillo7" instance=ExtResource("1_2jh14")]
+position = Vector2(755, -5)
+
+[node name="Ladrillo6" parent="Ladrillo16/Ladrillo7" instance=ExtResource("1_2jh14")]
+position = Vector2(849, -3)
+
+[node name="Ladrillo17" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(153, 2687)
+
+[node name="Ladrillo18" parent="." instance=ExtResource("1_2jh14")]
+position = Vector2(247, 2689)

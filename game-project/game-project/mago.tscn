@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://cpor60ag52ni5"]
+
+[ext_resource type="Script" uid="uid://difbrhk33h76" path="res://mago.gd" id="1_o4cn8"]
+[ext_resource type="Texture2D" uid="uid://dh1ngt3q3i5s2" path="res://pixil-frame-0 (4).png" id="2_o4cn8"]
+[ext_resource type="PackedScene" uid="uid://c01dycgmo5ynm" path="res://flecha.tscn" id="2_xy8el"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o4cn8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_o4cn8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xy8el"]
+radius = 63.0317
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_exkwe"]
+radius = 595.142
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["enemigos"]]
+script = ExtResource("1_o4cn8")
+escena_flecha = ExtResource("2_xy8el")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(5.99999, -15.42)
+scale = Vector2(4.6875, 4.78625)
+sprite_frames = SubResource("SpriteFrames_o4cn8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -1)
+shape = SubResource("CircleShape2D_xy8el")
+
+[node name="DetectorRango" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectorRango"]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_exkwe")
+
+[node name="Timer" type="Timer" parent="." groups=["enemigos"]]
+
+[node name="Marker2D" type="Marker2D" parent="."]
+gizmo_extents = 0.0
+
+[connection signal="body_entered" from="DetectorRango" to="." method="_on_detector_rango_body_entered"]
+[connection signal="body_exited" from="DetectorRango" to="." method="_on_detector_rango_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

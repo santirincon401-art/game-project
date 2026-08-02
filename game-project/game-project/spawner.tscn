@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://d3i3pu8cxgsqp"]
+
+[ext_resource type="Script" uid="uid://bghda0r5snru7" path="res://spawner.gd" id="1_yp5lu"]
+[ext_resource type="PackedScene" uid="uid://c11cugnwonpis" path="res://enemigo1.tscn" id="2_mcln3"]
+[ext_resource type="Texture2D" uid="uid://cw0ny70tcnyki" path="res://icon.svg" id="2_ttk4a"]
+[ext_resource type="PackedScene" uid="uid://cpor60ag52ni5" path="res://mago.tscn" id="3_bphdf"]
+[ext_resource type="PackedScene" uid="uid://q7w545oyigav" path="res://hormiga.tscn" id="4_7ocbr"]
+[ext_resource type="Texture2D" uid="uid://dya0oijb3eolk" path="res://pixil-frame-0 (13).png" id="5_mv5bd"]
+
+[node name="Spawner" type="Node2D"]
+script = ExtResource("1_yp5lu")
+escena_golem = ExtResource("2_mcln3")
+escena_mago = ExtResource("3_bphdf")
+escena_hormiga = ExtResource("4_7ocbr")
+
+[node name="Spawn1" type="Marker2D" parent="."]
+position = Vector2(-1, -694)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.22
+autostart = true
+
+[node name="Spawn2" type="Marker2D" parent="."]
+position = Vector2(4, 858)
+
+[node name="Spawn3" type="Marker2D" parent="."]
+position = Vector2(791, 4)
+
+[node name="Spawn4" type="Marker2D" parent="."]
+position = Vector2(-836, -11)
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-844, -6)
+scale = Vector2(2.59375, 2.375)
+texture = ExtResource("5_mv5bd")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(4, -695)
+texture = ExtResource("2_ttk4a")
+
+[node name="Icon3" type="Sprite2D" parent="."]
+position = Vector2(771, 4)
+texture = ExtResource("2_ttk4a")
+
+[node name="Icon4" type="Sprite2D" parent="."]
+position = Vector2(-1, 863)
+texture = ExtResource("2_ttk4a")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

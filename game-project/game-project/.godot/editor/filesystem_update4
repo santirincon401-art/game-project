@@ -1,6 +1,13 @@
 res://Player/Player.tscn
+res://hormigilla.gd
+res://Vela/Vela.tscn
 res://City.tscn
-res://character_body_2d.gd
+res://ganar.tscn
+res://spawner.tscn
+res://mago.tscn
+res://flecha.tscn
+res://hormiga.tscn
 res://enemigo1.tscn
-res://enemigo y jugador.tscn
+res://node_2d.tscn
+res://spawner.gd
 res://Player/character_body_2d.gd

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca8gcafq06ivb"]
+
+[ext_resource type="Texture2D" uid="uid://kekqtm30bept" path="res://pixil-frame-0 (1).png" id="1_yxku5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdih8"]
+size = Vector2(93, 94.75)
+
+[node name="Ladrillo" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-8, -4)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(8.00001, 4)
+scale = Vector2(0.262429, 0.270241)
+texture = ExtResource("1_yxku5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(8, 4)
+shape = SubResource("RectangleShape2D_rdih8")

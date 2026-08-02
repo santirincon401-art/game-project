@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c01dycgmo5ynm"]
+
+[ext_resource type="Script" uid="uid://dtlmb7tw8xvqa" path="res://flecha.gd" id="1_kyqwc"]
+[ext_resource type="Texture2D" uid="uid://hbr5cd1apgrj" path="res://pixil-frame-0 (5).png" id="2_kbrrd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kyqwc"]
+radius = 15.2315
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_kyqwc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_kyqwc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_kbrrd")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

@@ -1,52 +1,38 @@
-[gd_scene load_steps=4 format=3 uid="uid://tw7mrxnenj5p"]
+[gd_scene load_steps=6 format=3 uid="uid://tw7mrxnenj5p"]
 
 [ext_resource type="PackedScene" uid="uid://b3w674xv0nysb" path="res://Player/Player.tscn" id="1_0d5ds"]
 [ext_resource type="PackedScene" uid="uid://byaqhaq0djam1" path="res://Vela/Vela.tscn" id="2_1lbi8"]
-[ext_resource type="PackedScene" uid="uid://c11cugnwonpis" path="res://enemigo1.tscn" id="3_1lbi8"]
+[ext_resource type="PackedScene" uid="uid://t17j1fhrg3k5" path="res://mapa.tscn" id="2_76ryl"]
+[ext_resource type="Texture2D" uid="uid://dbqrw2q5wdff1" path="res://pixil-frame-0 (3).png" id="3_khkt5"]
+[ext_resource type="PackedScene" uid="uid://d3i3pu8cxgsqp" path="res://spawner.tscn" id="5_levc3"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Personaje" parent="." instance=ExtResource("1_0d5ds")]
-position = Vector2(160, 120)
+position = Vector2(-3, -9)
+
+[node name="Mapa" parent="." instance=ExtResource("2_76ryl")]
+position = Vector2(-1347, -1325)
+
+[node name="Pixil-frame-0(2)" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(-66, 4)
+scale = Vector2(1.99858, 2.05114)
+texture = ExtResource("3_khkt5")
 
 [node name="Node2D" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(487, 136)
+position = Vector2(1150, -1191)
 
 [node name="Node2D2" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(111, 356)
+position = Vector2(1180, 1247)
 
 [node name="Node2D3" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(-208, 121)
+position = Vector2(-1252, 1219)
 
 [node name="Node2D4" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(161, -225)
+position = Vector2(-1290, -1207)
 
-[node name="Node2D5" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(-405, -289)
+[node name="Spawner" parent="." instance=ExtResource("5_levc3")]
+position = Vector2(-6, 4)
 
-[node name="Node2D6" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(-591, 455)
-
-[node name="Node2D7" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(639, 539)
-
-[node name="Node2D8" parent="." instance=ExtResource("2_1lbi8")]
-position = Vector2(855, -183)
-
-[node name="Node2D9" parent="." instance=ExtResource("3_1lbi8")]
-position = Vector2(259, 583)
-
-[node name="Node2D10" parent="." instance=ExtResource("3_1lbi8")]
-position = Vector2(-360, -36)
-
-[node name="Node2D11" parent="." instance=ExtResource("3_1lbi8")]
-position = Vector2(563, -332)
-
-[node name="Node2D12" parent="." instance=ExtResource("3_1lbi8")]
-position = Vector2(726, 214)
-
-[node name="Node2D13" parent="." instance=ExtResource("3_1lbi8")]
-position = Vector2(-246, 446)
-
-[node name="Node2D14" parent="." instance=ExtResource("3_1lbi8")]
-position = Vector2(20, -389)
+[node name="Enemigos" type="Node2D" parent="."]

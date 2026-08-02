@@ -1,5 +1,15 @@
-Camera2D
+VisibleOnScreenEnabler2D
+Marker2D
+Sprite2D
 CollisionShape2D
 Area2D
+Timer
 AnimatedSprite2D
 CharacterBody2D
+Node2D
+Label
+Button
+Container
+CanvasLayer
+Node
+TileMap
