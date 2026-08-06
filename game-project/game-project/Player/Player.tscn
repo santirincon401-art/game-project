@@ -1,9 +1,10 @@
-[gd_scene load_steps=25 format=3 uid="uid://b3w674xv0nysb"]
+[gd_scene load_steps=31 format=3 uid="uid://b3w674xv0nysb"]
 
 [ext_resource type="Script" uid="uid://il650jo3m4u4" path="res://Player/character_body_2d.gd" id="1_q3lat"]
 [ext_resource type="Texture2D" uid="uid://lhpo51qsn6by" path="res://Player/portavelas_walk.png" id="2_tok1r"]
 [ext_resource type="Texture2D" uid="uid://6i2m5lk7dvxo" path="res://Player/portavelas_attack1.png" id="3_8g4oa"]
 [ext_resource type="Texture2D" uid="uid://bp71wfk82vyve" path="res://Player/portavelas_idle.png" id="3_ddoul"]
+[ext_resource type="Texture2D" uid="uid://bald5wngabubj" path="res://rotar.png" id="5_8g4oa"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ddoul"]
 radius = 60.0
@@ -68,6 +69,26 @@ region = Rect2(200, 0, 100, 100)
 atlas = ExtResource("3_ddoul")
 region = Rect2(300, 0, 100, 100)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_roy6y"]
+atlas = ExtResource("5_8g4oa")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u5tep"]
+atlas = ExtResource("5_8g4oa")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ps8ct"]
+atlas = ExtResource("5_8g4oa")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uipr"]
+atlas = ExtResource("5_8g4oa")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yifbt"]
+atlas = ExtResource("5_8g4oa")
+region = Rect2(128, 0, 32, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_3mea3"]
 animations = [{
 "frames": [{
@@ -129,6 +150,26 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_roy6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u5tep")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ps8ct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7uipr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yifbt")
+}],
+"loop": true,
+"name": &"rodar",
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8g4oa"]
@@ -162,9 +203,7 @@ shape = SubResource("CircleShape2D_ddoul")
 position = Vector2(3, -18)
 scale = Vector2(2.41, 2.15)
 sprite_frames = SubResource("SpriteFrames_3mea3")
-animation = &"ataque"
-frame = 5
-frame_progress = 1.0
+animation = &"rodar"
 
 [node name="Camera2D" type="Camera2D" parent="Jugador" groups=["jugador"]]
 zoom = Vector2(0.5, 0.5)
