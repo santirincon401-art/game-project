@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://cdlag3algdtgs"]
 
-[ext_resource type="PackedScene" uid="uid://q7w545oyigav" path="res://hormiga.tscn" id="2_0e48y"]
-[ext_resource type="PackedScene" uid="uid://cpor60ag52ni5" path="res://mago.tscn" id="2_0hol4"]
-[ext_resource type="PackedScene" uid="uid://b3w674xv0nysb" path="res://Player.tscn" id="2_epypp"]
-[ext_resource type="PackedScene" uid="uid://b74d00djjku7a" path="res://escudo.tscn" id="4_0hol4"]
-[ext_resource type="PackedScene" uid="uid://c11cugnwonpis" path="res://enemigo1.tscn" id="5_q6r6c"]
+[ext_resource type="PackedScene" uid="uid://q7w545oyigav" path="res://Enemigos(escenas)/hormiga.tscn" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://cpor60ag52ni5" path="res://Enemigos(escenas)/mago.tscn" id="2_0hol4"]
+[ext_resource type="PackedScene" uid="uid://b3w674xv0nysb" path="res://Player/Player.tscn" id="2_epypp"]
+[ext_resource type="PackedScene" uid="uid://b74d00djjku7a" path="res://Enemigos(escenas)/escudo.tscn" id="4_0hol4"]
+[ext_resource type="PackedScene" uid="uid://c11cugnwonpis" path="res://escenas/enemigo1.tscn" id="5_q6r6c"]
 
 [node name="Node2D" type="Node2D"]
 

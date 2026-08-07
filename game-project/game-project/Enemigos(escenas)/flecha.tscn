@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://c01dycgmo5ynm"]
 
 [ext_resource type="Script" uid="uid://dtlmb7tw8xvqa" path="res://flecha.gd" id="1_kyqwc"]
-[ext_resource type="Texture2D" uid="uid://belltedexjysu" path="res://fuegito.png" id="2_kyqwc"]
+[ext_resource type="Texture2D" uid="uid://ckqf20vogglub" path="res://fuegito.png" id="2_kyqwc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kyqwc"]
 radius = 15.2315

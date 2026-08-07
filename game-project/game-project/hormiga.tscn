@@ -1,0 +1,72 @@
+[gd_scene load_steps=12 format=3 uid="uid://1kbirh2j4lpm"]
+
+[ext_resource type="Script" path="res://hormigilla.gd" id="1_p4hs0"]
+[ext_resource type="Texture2D" path="res://pixil-frame-0 (7).png" id="2_8ejvk"]
+[ext_resource type="Texture2D" path="res://pixil-frame-0 (6).png" id="3_vmobt"]
+[ext_resource type="Texture2D" path="res://pixil-frame-0 (8).png" id="4_nbqjm"]
+[ext_resource type="Texture2D" path="res://pixil-frame-0 (9).png" id="5_dki83"]
+[ext_resource type="Texture2D" path="res://pixil-frame-0 (10).png" id="6_ltldc"]
+[ext_resource type="Texture2D" path="res://pixil-frame-0 (11).png" id="7_fhtxt"]
+[ext_resource type="Texture2D" path="res://pixil-frame-0 (12).png" id="8_uk86n"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rrn34"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8ejvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vmobt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_nbqjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_dki83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ltldc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fhtxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uk86n")
+}],
+"loop": false,
+"name": &"pum",
+"speed": 18.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iwtyl"]
+radius = 63.0317
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dpllr"]
+radius = 595.142
+
+[node name="hormiga" type="CharacterBody2D" groups=["bum", "pum"]]
+script = ExtResource("1_p4hs0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-16.5, -16.42)
+scale = Vector2(5.28125, 4.84875)
+sprite_frames = SubResource("SpriteFrames_rrn34")
+frame_progress = 0.080281
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -1)
+shape = SubResource("CircleShape2D_iwtyl")
+
+[node name="DetectorRango" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectorRango"]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_dpllr")
+
+[connection signal="body_entered" from="DetectorRango" to="." method="_on_detector_rango_body_entered"]
+[connection signal="body_exited" from="DetectorRango" to="." method="_on_detector_rango_body_exited"]

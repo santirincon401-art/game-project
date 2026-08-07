@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvv7lt4h440ex"]
+
+[ext_resource type="PackedScene" uid="uid://1kbirh2j4lpm" path="res://hormiga.tscn" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://coctpp4qpo7nm" path="res://mago.tscn" id="2_0hol4"]
+[ext_resource type="PackedScene" uid="uid://i2gfe47irk8y" path="res://Player.tscn" id="2_epypp"]
+[ext_resource type="PackedScene" uid="uid://dpcaemlisab1h" path="res://escudo.tscn" id="4_0hol4"]
+[ext_resource type="PackedScene" uid="uid://cbbpl1ctnca75" path="res://enemigo1.tscn" id="5_q6r6c"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="hormiga" parent="." instance=ExtResource("2_0e48y")]
+position = Vector2(997, 40)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_0hol4")]
+position = Vector2(233, 723)
+
+[node name="Jugador" parent="." instance=ExtResource("2_epypp")]
+position = Vector2(-271, 54)
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("4_0hol4")]
+position = Vector2(419, 942)
+scale = Vector2(1.0578, 1.01445)
+
+[node name="Golem piedra" parent="." instance=ExtResource("5_q6r6c")]
+position = Vector2(760, 1116)

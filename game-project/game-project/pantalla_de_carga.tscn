@@ -1,0 +1,143 @@
+[gd_scene load_steps=16 format=3 uid="uid://csb02rj7v3wio"]
+
+[ext_resource type="Script" uid="uid://b4aut062q87h4" path="res://button.gd" id="1_35hou"]
+[ext_resource type="Texture2D" uid="uid://bfsah223jubcf" path="res://Sprite-0003.png" id="2_nl72e"]
+[ext_resource type="Script" uid="uid://g72kwak6puxk" path="res://salir.gd" id="2_pjvae"]
+[ext_resource type="Texture2D" uid="uid://boja765fr6w3h" path="res://mas menu.png" id="3_5gtll"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nl72e"]
+atlas = ExtResource("2_nl72e")
+region = Rect2(0, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h6p0w"]
+atlas = ExtResource("3_5gtll")
+region = Rect2(0, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8s4ut"]
+atlas = ExtResource("3_5gtll")
+region = Rect2(0, 64, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gtll"]
+atlas = ExtResource("2_nl72e")
+region = Rect2(128, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oj1i8"]
+atlas = ExtResource("3_5gtll")
+region = Rect2(128, 64, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dstv"]
+atlas = ExtResource("3_5gtll")
+region = Rect2(128, 0, 128, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_40la1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nl72e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h6p0w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8s4ut")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gtll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oj1i8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dstv")
+}],
+"loop": true,
+"name": &"dormir",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3mga"]
+atlas = ExtResource("2_nl72e")
+region = Rect2(0, 64, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40la1"]
+atlas = ExtResource("2_nl72e")
+region = Rect2(128, 64, 128, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h6p0w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3mga")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40la1")
+}],
+"loop": true,
+"name": &"dormir",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5x53v"]
+font_size = 150
+font_color = Color(0.85873, 0.792639, 0.107346, 1)
+outline_size = 19
+outline_color = Color(1, 0.419608, 0.176471, 1)
+shadow_size = 41
+shadow_color = Color(0.882353, 0, 0, 1)
+
+[node name="Pantalla de carga" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Jugar" type="Button" parent="CanvasLayer"]
+offset_left = 475.0
+offset_top = 312.0
+offset_right = 668.0
+offset_bottom = 388.0
+text = "	play"
+script = ExtResource("1_35hou")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Jugar"]
+position = Vector2(91, 39)
+scale = Vector2(2.82812, 2.875)
+sprite_frames = SubResource("SpriteFrames_40la1")
+frame_progress = 0.207818
+
+[node name="Salir" type="Button" parent="CanvasLayer"]
+offset_left = 424.0
+offset_top = 445.0
+offset_right = 698.0
+offset_bottom = 531.0
+text = "Exit"
+script = ExtResource("2_pjvae")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Salir"]
+position = Vector2(138, 46)
+scale = Vector2(2.74219, 2.65625)
+sprite_frames = SubResource("SpriteFrames_h6p0w")
+animation = &"dormir"
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 178.0
+offset_top = 11.0
+offset_right = 1144.0
+offset_bottom = 244.0
+text = "The game"
+label_settings = SubResource("LabelSettings_5x53v")
+
+[connection signal="mouse_entered" from="CanvasLayer/Jugar" to="CanvasLayer/Jugar" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Jugar" to="CanvasLayer/Jugar" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/Jugar" to="CanvasLayer/Jugar" method="_on_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/Salir" to="CanvasLayer/Salir" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Salir" to="CanvasLayer/Salir" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/Salir" to="CanvasLayer/Salir" method="_on_pressed"]
