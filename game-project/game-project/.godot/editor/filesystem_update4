@@ -1,11 +1,2 @@
-res://Vela/Vela.tscn
-res://node_2d.tscn
-res://asd.tscn
-res://mago.tscn
-res://City.tscn
-res://Enemigos(escenas)/flecha.tscn
-res://escudo.tscn
-res://escenas/node_2d.tscn
 res://button.gd
-res://pantalla_de_carga.tscn
-res://salir.gd
+res://pantalla_de_perdida.tscn

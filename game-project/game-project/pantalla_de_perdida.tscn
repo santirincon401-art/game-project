@@ -1,7 +1,91 @@
-[gd_scene load_steps=4 format=3 uid="uid://6hb2iayr5v42"]
+[gd_scene format=3 uid="uid://6hb2iayr5v42"]
 
-[ext_resource type="Script" uid="uid://d06wghd512ujc" path="res://button.gd" id="1_7vidt"]
-[ext_resource type="Script" uid="uid://b1aj6a4vmfij" path="res://iralmenu.gd" id="2_t62ao"]
+[ext_resource type="Script" uid="uid://b4aut062q87h4" path="res://button.gd" id="1_7vidt"]
+[ext_resource type="Texture2D" uid="uid://bfsah223jubcf" path="res://Sprite-0003.png" id="2_nbjfm"]
+[ext_resource type="Script" uid="uid://c2srkbn8nb01g" path="res://iralmenu.gd" id="2_t62ao"]
+[ext_resource type="Texture2D" uid="uid://boja765fr6w3h" path="res://mas menu.png" id="3_j8evy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nl72e"]
+atlas = ExtResource("2_nbjfm")
+region = Rect2(0, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h6p0w"]
+atlas = ExtResource("3_j8evy")
+region = Rect2(0, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8s4ut"]
+atlas = ExtResource("3_j8evy")
+region = Rect2(0, 64, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gtll"]
+atlas = ExtResource("2_nbjfm")
+region = Rect2(128, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oj1i8"]
+atlas = ExtResource("3_j8evy")
+region = Rect2(128, 64, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dstv"]
+atlas = ExtResource("3_j8evy")
+region = Rect2(128, 0, 128, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7l15s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nl72e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h6p0w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8s4ut")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gtll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oj1i8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dstv")
+}],
+"loop": 1,
+"name": &"dormir",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3mga"]
+atlas = ExtResource("2_nbjfm")
+region = Rect2(0, 64, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40la1"]
+atlas = ExtResource("2_nbjfm")
+region = Rect2(128, 64, 128, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_elb4j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3mga")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40la1")
+}],
+"loop": 1,
+"name": &"dormir",
+"speed": 5.0
+}]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nbjfm"]
 font_size = 150
@@ -11,11 +95,11 @@ outline_color = Color(1, 0.419608, 0.176471, 1)
 shadow_size = 41
 shadow_color = Color(0.882353, 0, 0, 1)
 
-[node name="Pantalla_de_perdida" type="Node2D"]
+[node name="Pantalla_de_perdida" type="Node2D" unique_id=1183416015]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1076254234]
 
-[node name="Jugar" type="Button" parent="CanvasLayer"]
+[node name="Jugar" type="Button" parent="CanvasLayer" unique_id=598348620]
 offset_left = 399.0
 offset_top = 308.0
 offset_right = 762.0
@@ -23,7 +107,12 @@ offset_bottom = 384.0
 text = "Play again"
 script = ExtResource("1_7vidt")
 
-[node name="Salir" type="Button" parent="CanvasLayer"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Jugar" unique_id=1364056277]
+position = Vector2(175, 39)
+scale = Vector2(2.82812, 2.875)
+sprite_frames = SubResource("SpriteFrames_7l15s")
+
+[node name="Salir" type="Button" parent="CanvasLayer" unique_id=755301937]
 offset_left = 399.0
 offset_top = 405.0
 offset_right = 760.0
@@ -31,11 +120,17 @@ offset_bottom = 491.0
 text = "Go to the menu"
 script = ExtResource("2_t62ao")
 
-[node name="Label" type="Label" parent="CanvasLayer"]
-offset_left = 191.0
-offset_top = 58.0
-offset_right = 1157.0
-offset_bottom = 291.0
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Salir" unique_id=53725266]
+position = Vector2(162, 67)
+scale = Vector2(2.74219, 2.65625)
+sprite_frames = SubResource("SpriteFrames_elb4j")
+animation = &"dormir"
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=980143033]
+offset_left = 178.0
+offset_top = 20.0
+offset_right = 1144.0
+offset_bottom = 253.0
 text = "Game over"
 label_settings = SubResource("LabelSettings_nbjfm")
 
