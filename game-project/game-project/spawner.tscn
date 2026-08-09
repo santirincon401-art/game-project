@@ -1,17 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://dun8ow2w0y2bm"]
+[gd_scene load_steps=8 format=3 uid="uid://dun8ow2w0y2bm"]
 
-[ext_resource type="Script" path="res://spawner.gd" id="1_yp5lu"]
+[ext_resource type="Script" uid="uid://d3x36fueui8or" path="res://spawner.gd" id="1_yp5lu"]
 [ext_resource type="PackedScene" uid="uid://cbbpl1ctnca75" path="res://enemigo1.tscn" id="2_mcln3"]
 [ext_resource type="Texture2D" uid="uid://cw0ny70tcnyki" path="res://icon.svg" id="2_ttk4a"]
-[ext_resource type="PackedScene" path="res://mago.tscn" id="3_bphdf"]
+[ext_resource type="PackedScene" uid="uid://coctpp4qpo7nm" path="res://mago.tscn" id="3_bphdf"]
 [ext_resource type="PackedScene" uid="uid://1kbirh2j4lpm" path="res://hormiga.tscn" id="4_7ocbr"]
-[ext_resource type="Texture2D" path="res://pixil-frame-0 (13).png" id="5_mv5bd"]
+[ext_resource type="PackedScene" uid="uid://dpcaemlisab1h" path="res://escudo.tscn" id="5_h3fkd"]
+[ext_resource type="Texture2D" uid="uid://byq51t1jjad5x" path="res://pixil-frame-0 (13).png" id="5_mv5bd"]
 
 [node name="Spawner" type="Node2D"]
 script = ExtResource("1_yp5lu")
 escena_golem = ExtResource("2_mcln3")
 escena_mago = ExtResource("3_bphdf")
 escena_hormiga = ExtResource("4_7ocbr")
+escena_escudo = ExtResource("5_h3fkd")
 
 [node name="Spawn1" type="Marker2D" parent="."]
 position = Vector2(-1, -694)

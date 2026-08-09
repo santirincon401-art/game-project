@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 @export var speed: float = 500.0
-@export var speed_sprint: float = 850.0
-@export var inercia_resbaladiza: float = 3.0 # Menor número = más resbala
+@export var speed_sprint: float = 1000
+@export var inercia_resbaladiza: float = 1.0 # Menor número = más resbala
 @export var dano: int = 1
 @export var vida_maxima: int = 5
 
@@ -18,9 +18,10 @@ var puede_curarse := true
 @onready var collision_ataque: CollisionShape2D = $Area2D/ataque
 @onready var label_vida: Label = $CanvasLayer/Label
 @onready var label_puntos: Label = $CanvasLayer/Label2
-
-
+var a = 0
+var guardar = true
 func _ready() -> void:
+	animated_sprite.play("default")
 	puntos = 0
 	vida = vida_maxima
 	collision_ataque.disabled = true
@@ -31,8 +32,10 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
 	# DETECTAR SI ESTÁ PRESIONANDO SHIFT
+	
 	var presionando_shift := Input.is_key_pressed(KEY_SHIFT) or Input.is_action_pressed("shift")
 	rodando = presionando_shift
+	
 
 	# 1. INICIAR ATAQUE (Bloqueado si está rodando)
 	if Input.is_action_just_pressed("ataque") and not atacando and not rodando:
@@ -65,10 +68,27 @@ func _physics_process(_delta: float) -> void:
 
 	# 4. GESTIÓN DE ANIMACIONES
 	if rodando:
+		
+		if not guardar and animated_sprite.animation == "guardar":
+			return
+		
+		if guardar:
+			animated_sprite.play("guardar")
+			guardar = false
+			return
+				
 		animated_sprite.play("rodar")
 	elif not atacando:
+		if not guardar:
+			animated_sprite.play("desguardar")
+		
+		guardar = true
+		if animated_sprite.animation == "desguardar":
+			return
+		print("no")
 		if direction != Vector2.ZERO:
 			animated_sprite.play("Walk")
+		
 		else:
 			animated_sprite.play("default")
 
@@ -121,6 +141,10 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 	if animated_sprite.animation == "ataque":
 		collision_ataque.disabled = true
 		atacando = false
+	elif animated_sprite.animation == "guardar":
+		animated_sprite.play("rodar")
+	elif animated_sprite.animation == "desguardar":
+		animated_sprite.play("Walk")
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
@@ -142,7 +166,7 @@ func recibir_dano(dano_recibido: int) -> void:
 	vida = clampi(vida - dano_recibido, 0, vida_maxima)
 	actualizar_hud()
 
-	animated_sprite.modulate = Color(1, 0.2, 0.2)
+	animated_sprite.modulate = Color(0.885, 0.096, 0.037, 1.0)
 	var tween = create_tween()
 	tween.tween_property(animated_sprite, "modulate", Color.WHITE, 0.2)
 
@@ -178,7 +202,7 @@ func actualizar_hud() -> void:
 		label_vida.text = "HP: " + str(vida) + " / " + str(vida_maxima)
 	if label_puntos:
 		label_puntos.text = "Score: " + str(puntos)
-	if puntos >= 250:
+	if puntos >= 1:
 		get_tree().change_scene_to_file("res://ganar.tscn")
 
 

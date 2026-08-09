@@ -3,6 +3,7 @@ extends Node2D
 @export var escena_golem: PackedScene
 @export var escena_mago: PackedScene
 @export var escena_hormiga: PackedScene
+@export var escena_escudo: PackedScene
 @export var tiempo_spawn: float = 1.5
 var enemy = 0
 @onready var timer: Timer = $Timer
@@ -55,10 +56,12 @@ func _on_timer_timeout():
 	# Elegir enemigo (50% Golem, 50% Mago)
 	var escena: PackedScene
 	enemy = randf()
-	if enemy < 0.3:
+	if enemy < 0.25:
 		escena = escena_golem
-	elif enemy <0.6:
+	elif enemy <0.5:
 		escena = escena_hormiga
+	elif enemy < 0.75:
+		escena = escena_escudo
 	else:
 		escena = escena_mago
 

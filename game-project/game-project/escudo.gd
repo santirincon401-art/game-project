@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@export var vida_maxima := 3
+@export var vida_maxima := 2
 
-var vida := 3
+var vida := 2
 var esta_muerto := false
 var invulnerable := false 
 
@@ -17,6 +17,7 @@ func _ready():
 	vida = vida_maxima
 	add_to_group("enemigos")
 	add_to_group("pum")
+	add_to_group("escudo")
 
 	# Conexión de la señal de animación para transiciones fluidas
 	if sprite:
@@ -34,8 +35,9 @@ func _physics_process(_delta):
 func _on_area_proteccion_body_entered(body: Node2D):
 	if body == self or esta_muerto:
 		return
-
-	if body.is_in_group("enemigos") or body.is_in_group("pum"):
+	if body.is_in_group("escudo"):
+		return
+	if body.is_in_group("enemigos") or body.is_in_group("pum") :
 		if not cuerpos_protegidos.has(body):
 			cuerpos_protegidos.append(body)
 			_asignar_invulnerabilidad(body, true)

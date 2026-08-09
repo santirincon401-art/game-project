@@ -1,2 +1,9 @@
+res://spawner.tscn
+res://spawner.gd
+res://City.tscn
+res://escudo.tscn
+res://escenas/node_2d.tscn
+res://escenas/ganar.tscn
 res://button.gd
-res://pantalla_de_perdida.tscn
+res://Player.tscn
+res://Player/character_body_2d.gd

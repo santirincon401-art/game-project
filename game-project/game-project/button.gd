@@ -4,7 +4,7 @@ extends Button
 func _on_pressed() -> void:
 	get_tree().change_scene_to_file("res://City.tscn")
 func _ready() -> void:
-	animated_sprite.play("default")
+	pass
 func _on_mouse_entered() -> void:
 	animated_sprite.play("dormir")
 

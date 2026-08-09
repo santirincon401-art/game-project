@@ -23,3 +23,7 @@ scale = Vector2(1.0578, 1.01445)
 
 [node name="Golem piedra" parent="." instance=ExtResource("5_q6r6c")]
 position = Vector2(760, 1116)
+
+[node name="CharacterBody2D3" parent="." groups=["escudo"] instance=ExtResource("4_0hol4")]
+position = Vector2(143, 1126)
+scale = Vector2(1.0578, 1.01445)
