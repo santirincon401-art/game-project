@@ -1,3 +1,5 @@
+Label
+TileMapLayer
 AnimatedSprite2D
 Sprite2D
 VisibleOnScreenEnabler2D
@@ -7,8 +9,6 @@ Area2D
 Timer
 CharacterBody2D
 Node2D
-Label
 Button
 Container
 CanvasLayer
-Node

@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://i2gfe47irk8y"]
+[gd_scene format=3 uid="uid://i2gfe47irk8y"]
 
 [ext_resource type="Script" uid="uid://il650jo3m4u4" path="res://Player/character_body_2d.gd" id="1_q3lat"]
 [ext_resource type="Texture2D" uid="uid://lhpo51qsn6by" path="res://Player/portavelas_walk.png" id="2_tok1r"]
@@ -124,7 +124,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_0j2ni")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Walk",
 "speed": 9.0
 }, {
@@ -147,7 +147,7 @@ animations = [{
 "duration": 1.5,
 "texture": SubResource("AtlasTexture_evw08")
 }],
-"loop": false,
+"loop": 0,
 "name": &"ataque",
 "speed": 15.0
 }, {
@@ -164,7 +164,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dm7nj")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -178,7 +178,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d6rpx")
 }],
-"loop": false,
+"loop": 0,
 "name": &"desguardar",
 "speed": 9.0
 }, {
@@ -192,7 +192,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3tkgg")
 }],
-"loop": false,
+"loop": 0,
 "name": &"guardar",
 "speed": 9.0
 }, {
@@ -206,7 +206,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5ncpa")
 }],
-"loop": true,
+"loop": 1,
 "name": &"rodar",
 "speed": 5.0
 }]
@@ -229,34 +229,34 @@ outline_color = Color(0.229112, 0.229112, 0.229112, 1)
 shadow_size = 50
 shadow_color = Color(0, 0, 0, 1)
 
-[node name="Jugador" type="Node2D"]
+[node name="Jugador" type="Node2D" unique_id=528975174]
 
-[node name="Jugador" type="CharacterBody2D" parent="."]
+[node name="Jugador" type="CharacterBody2D" parent="." unique_id=596104234]
 script = ExtResource("1_q3lat")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador" unique_id=1123400622]
 position = Vector2(1, 1)
 shape = SubResource("CircleShape2D_ddoul")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Jugador"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Jugador" unique_id=160157310]
 position = Vector2(3, -18)
 scale = Vector2(2.41, 2.15)
 sprite_frames = SubResource("SpriteFrames_3mea3")
 animation = &"desguardar"
 
-[node name="Camera2D" type="Camera2D" parent="Jugador" groups=["jugador"]]
+[node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=1516740577 groups=["jugador"]]
 zoom = Vector2(0.5, 0.5)
 
-[node name="Area2D" type="Area2D" parent="Jugador"]
+[node name="Area2D" type="Area2D" parent="Jugador" unique_id=1569811879]
 
-[node name="ataque" type="CollisionShape2D" parent="Jugador/Area2D"]
+[node name="ataque" type="CollisionShape2D" parent="Jugador/Area2D" unique_id=1435011615]
 position = Vector2(50, 1)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_8g4oa")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Jugador"]
+[node name="CanvasLayer" type="CanvasLayer" parent="Jugador" unique_id=1080887500]
 
-[node name="Label" type="Label" parent="Jugador/CanvasLayer"]
+[node name="Label" type="Label" parent="Jugador/CanvasLayer" unique_id=321263407]
 offset_left = 25.0
 offset_top = -13.0
 offset_right = 1178.0
@@ -266,12 +266,21 @@ label_settings = SubResource("LabelSettings_ddoul")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="Jugador/CanvasLayer"]
+[node name="Label2" type="Label" parent="Jugador/CanvasLayer" unique_id=1886652951]
 offset_left = 234.0
 offset_top = 550.0
 offset_right = 970.0
 offset_bottom = 646.0
 text = "Score: 0"
+label_settings = SubResource("LabelSettings_8g4oa")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Jugador/CanvasLayer" unique_id=1116093611]
+offset_left = -174.0
+offset_top = 289.0
+offset_right = 562.0
+offset_bottom = 391.0
 label_settings = SubResource("LabelSettings_8g4oa")
 horizontal_alignment = 1
 vertical_alignment = 1

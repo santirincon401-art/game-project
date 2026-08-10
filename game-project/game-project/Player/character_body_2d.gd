@@ -12,15 +12,20 @@ var atacando := false
 var rodando := false
 var invencible := false
 var puede_curarse := true
+var combo: int = 0
+var comboTime: float = 0.0
+var comboTimeMax: float = 1.5
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var area_ataque: Area2D = $Area2D
 @onready var collision_ataque: CollisionShape2D = $Area2D/ataque
 @onready var label_vida: Label = $CanvasLayer/Label
 @onready var label_puntos: Label = $CanvasLayer/Label2
+@onready var label_combo: Label = $CanvasLayer/Label3
 var a = 0
 var guardar = true
 func _ready() -> void:
+	label_combo.visible = false
 	animated_sprite.play("default")
 	puntos = 0
 	vida = vida_maxima
@@ -32,7 +37,13 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
 	# DETECTAR SI ESTÁ PRESIONANDO SHIFT
-	
+	if combo > 0:
+		comboTime -= _delta
+		if comboTime <= 0:
+			combo = 0
+			comboTime = 0
+			label_combo.visible = false
+			print("Combo terminado")
 	var presionando_shift := Input.is_key_pressed(KEY_SHIFT) or Input.is_action_pressed("shift")
 	rodando = presionando_shift
 	
@@ -85,7 +96,7 @@ func _physics_process(_delta: float) -> void:
 		guardar = true
 		if animated_sprite.animation == "desguardar":
 			return
-		print("no")
+		
 		if direction != Vector2.ZERO:
 			animated_sprite.play("Walk")
 		
@@ -154,9 +165,26 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if atacando and body.has_method("recibir_dano"):
 		if body.is_in_group("enemigos"):
 			body.recibir_dano(dano)
-		elif body.is_in_group("pum"):
-			body.recibir_dano(dano + 1)
+			combo += 1
+			comboTime = comboTimeMax
 
+			label_combo.text = "x" + str(combo)
+			label_combo.visible = true
+
+			animar_combo()
+
+			print(combo)
+func animar_combo() -> void:
+	var tween = create_tween()
+
+	label_combo.scale = Vector2(1.5, 1.5)
+
+	tween.tween_property(
+		label_combo,
+		"scale",
+		Vector2(1.0, 1.0),
+		0.15
+	).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 
 func recibir_dano(dano_recibido: int) -> void:
 	if invencible:
@@ -202,7 +230,9 @@ func actualizar_hud() -> void:
 		label_vida.text = "HP: " + str(vida) + " / " + str(vida_maxima)
 	if label_puntos:
 		label_puntos.text = "Score: " + str(puntos)
-	if puntos >= 1:
+	
+		
+	if puntos >= 250:
 		get_tree().change_scene_to_file("res://ganar.tscn")
 
 
