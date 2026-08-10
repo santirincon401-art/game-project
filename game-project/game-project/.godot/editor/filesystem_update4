@@ -1,9 +1,8 @@
-res://spawner.tscn
+res://pantalla_de_carga.tscn
 res://spawner.gd
+res://spawner.tscn
 res://City.tscn
 res://escudo.tscn
 res://escenas/node_2d.tscn
 res://escenas/ganar.tscn
-res://button.gd
 res://Player.tscn
-res://Player/character_body_2d.gd
