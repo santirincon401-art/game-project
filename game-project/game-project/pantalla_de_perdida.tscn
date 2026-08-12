@@ -4,6 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://bfsah223jubcf" path="res://Sprite-0003.png" id="2_nbjfm"]
 [ext_resource type="Script" uid="uid://c2srkbn8nb01g" path="res://iralmenu.gd" id="2_t62ao"]
 [ext_resource type="Texture2D" uid="uid://boja765fr6w3h" path="res://mas menu.png" id="3_j8evy"]
+[ext_resource type="FontFile" uid="uid://btfgsnmytor2b" path="res://ThaleahFat.ttf" id="5_7l15s"]
+[ext_resource type="Texture2D" uid="uid://cwe5xtmahilbi" path="res://menu.png" id="5_elb4j"]
+[ext_resource type="Texture2D" uid="uid://c41smjr6x4ixn" path="res://pixil-frame-0.png" id="7_3vd1q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nl72e"]
 atlas = ExtResource("2_nbjfm")
@@ -60,19 +63,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a3mga"]
-atlas = ExtResource("2_nbjfm")
-region = Rect2(0, 64, 128, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_40la1"]
-atlas = ExtResource("2_nbjfm")
-region = Rect2(128, 64, 128, 64)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_elb4j"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a3mga")
+"texture": ExtResource("5_elb4j")
 }],
 "loop": 1,
 "name": &"default",
@@ -80,7 +75,15 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_40la1")
+"texture": ExtResource("5_elb4j")
+}],
+"loop": 1,
+"name": &"default_2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_elb4j")
 }],
 "loop": 1,
 "name": &"dormir",
@@ -88,10 +91,11 @@ animations = [{
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nbjfm"]
+font = ExtResource("5_7l15s")
 font_size = 150
-font_color = Color(0.85873, 0.792639, 0.107346, 1)
+font_color = Color(0.7989832, 0, 0.102512635, 1)
 outline_size = 19
-outline_color = Color(1, 0.419608, 0.176471, 1)
+outline_color = Color(1, 0.5683302, 0.5896773, 1)
 shadow_size = 41
 shadow_color = Color(0.882353, 0, 0, 1)
 
@@ -100,39 +104,44 @@ shadow_color = Color(0.882353, 0, 0, 1)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1076254234]
 
 [node name="Jugar" type="Button" parent="CanvasLayer" unique_id=598348620]
-offset_left = 399.0
-offset_top = 308.0
-offset_right = 762.0
-offset_bottom = 384.0
+offset_left = 74.0
+offset_top = 242.0
+offset_right = 290.0
+offset_bottom = 318.0
 text = "Play again"
 script = ExtResource("1_7vidt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Jugar" unique_id=1364056277]
-position = Vector2(175, 39)
+position = Vector2(116, 34)
 scale = Vector2(2.82812, 2.875)
 sprite_frames = SubResource("SpriteFrames_7l15s")
 
 [node name="Salir" type="Button" parent="CanvasLayer" unique_id=755301937]
-offset_left = 399.0
-offset_top = 405.0
-offset_right = 760.0
-offset_bottom = 491.0
+offset_left = 431.0
+offset_top = 245.0
+offset_right = 658.0
+offset_bottom = 331.0
 text = "Go to the menu"
 script = ExtResource("2_t62ao")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Salir" unique_id=53725266]
-position = Vector2(162, 67)
-scale = Vector2(2.74219, 2.65625)
+position = Vector2(121.000015, 39)
+scale = Vector2(0.83261734, 0.6820311)
 sprite_frames = SubResource("SpriteFrames_elb4j")
 animation = &"dormir"
 
 [node name="Label" type="Label" parent="CanvasLayer" unique_id=980143033]
-offset_left = 178.0
-offset_top = 20.0
-offset_right = 1144.0
-offset_bottom = 253.0
+offset_left = 59.0
+offset_top = 25.0
+offset_right = 740.0
+offset_bottom = 187.0
 text = "Game over"
 label_settings = SubResource("LabelSettings_nbjfm")
+
+[node name="PixilFrame0" type="Sprite2D" parent="." unique_id=181737058]
+position = Vector2(574.12506, 323.25)
+scale = Vector2(1.1633837, 1.2138889)
+texture = ExtResource("7_3vd1q")
 
 [connection signal="pressed" from="CanvasLayer/Jugar" to="CanvasLayer/Jugar" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Salir" to="CanvasLayer/Salir" method="_on_pressed"]

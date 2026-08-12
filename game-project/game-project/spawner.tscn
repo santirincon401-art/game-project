@@ -1,51 +1,132 @@
-[gd_scene load_steps=8 format=3 uid="uid://dun8ow2w0y2bm"]
+[gd_scene format=3 uid="uid://dun8ow2w0y2bm"]
 
 [ext_resource type="Script" uid="uid://d3x36fueui8or" path="res://spawner.gd" id="1_yp5lu"]
 [ext_resource type="PackedScene" uid="uid://cbbpl1ctnca75" path="res://enemigo1.tscn" id="2_mcln3"]
-[ext_resource type="Texture2D" uid="uid://cw0ny70tcnyki" path="res://icon.svg" id="2_ttk4a"]
 [ext_resource type="PackedScene" uid="uid://coctpp4qpo7nm" path="res://mago.tscn" id="3_bphdf"]
 [ext_resource type="PackedScene" uid="uid://1kbirh2j4lpm" path="res://hormiga.tscn" id="4_7ocbr"]
 [ext_resource type="PackedScene" uid="uid://dpcaemlisab1h" path="res://escudo.tscn" id="5_h3fkd"]
-[ext_resource type="Texture2D" uid="uid://byq51t1jjad5x" path="res://pixil-frame-0 (13).png" id="5_mv5bd"]
+[ext_resource type="Texture2D" uid="uid://bj81o1yu7f5n8" path="res://portal.png" id="6_h3fkd"]
+[ext_resource type="FontFile" uid="uid://btfgsnmytor2b" path="res://ThaleahFat.ttf" id="7_qmymf"]
 
-[node name="Spawner" type="Node2D"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_bt5rc"]
+atlas = ExtResource("6_h3fkd")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g67ry"]
+atlas = ExtResource("6_h3fkd")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvome"]
+atlas = ExtResource("6_h3fkd")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sy5nt"]
+atlas = ExtResource("6_h3fkd")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iv4qy"]
+atlas = ExtResource("6_h3fkd")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u5j6i"]
+atlas = ExtResource("6_h3fkd")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c6smh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bt5rc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g67ry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvome")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sy5nt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iv4qy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u5j6i")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_c6smh"]
+font = ExtResource("7_qmymf")
+font_size = 50
+outline_size = 10
+outline_color = Color(0.27752772, 0.27752772, 0.27752772, 1)
+shadow_size = 13
+
+[node name="Spawner" type="Node2D" unique_id=367344787]
 script = ExtResource("1_yp5lu")
 escena_golem = ExtResource("2_mcln3")
 escena_mago = ExtResource("3_bphdf")
 escena_hormiga = ExtResource("4_7ocbr")
 escena_escudo = ExtResource("5_h3fkd")
 
-[node name="Spawn1" type="Marker2D" parent="."]
+[node name="Spawn1" type="Marker2D" parent="." unique_id=1198133317]
 position = Vector2(-1, -694)
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=657210644]
 wait_time = 0.22
 autostart = true
 
-[node name="Spawn2" type="Marker2D" parent="."]
+[node name="Spawn2" type="Marker2D" parent="." unique_id=1800769840]
 position = Vector2(4, 858)
 
-[node name="Spawn3" type="Marker2D" parent="."]
+[node name="Spawn3" type="Marker2D" parent="." unique_id=302987335]
 position = Vector2(791, 4)
 
-[node name="Spawn4" type="Marker2D" parent="."]
+[node name="Spawn4" type="Marker2D" parent="." unique_id=253014835]
 position = Vector2(-836, -11)
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(-844, -6)
-scale = Vector2(2.59375, 2.375)
-texture = ExtResource("5_mv5bd")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1323103655]
+position = Vector2(-1.9999971, -692.5)
+scale = Vector2(1.7499999, 1.7343743)
+sprite_frames = SubResource("SpriteFrames_c6smh")
+frame_progress = 0.34040892
 
-[node name="Icon2" type="Sprite2D" parent="."]
-position = Vector2(4, -695)
-texture = ExtResource("2_ttk4a")
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=813131089]
+position = Vector2(-834, -5.5)
+scale = Vector2(1.7499999, 1.7343743)
+sprite_frames = SubResource("SpriteFrames_c6smh")
+frame_progress = 0.153289
 
-[node name="Icon3" type="Sprite2D" parent="."]
-position = Vector2(771, 4)
-texture = ExtResource("2_ttk4a")
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="." unique_id=2032142061]
+position = Vector2(793, 1.5)
+scale = Vector2(1.7499999, 1.7343743)
+sprite_frames = SubResource("SpriteFrames_c6smh")
+frame_progress = 0.153289
 
-[node name="Icon4" type="Sprite2D" parent="."]
-position = Vector2(-1, 863)
-texture = ExtResource("2_ttk4a")
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="." unique_id=470565100]
+position = Vector2(5.999995, 860.5)
+scale = Vector2(1.7499999, 1.7343743)
+sprite_frames = SubResource("SpriteFrames_c6smh")
+frame_progress = 0.153289
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1374651768]
+
+[node name="BarraOleada" type="ProgressBar" parent="CanvasLayer" unique_id=2073986419]
+offset_left = 317.0
+offset_top = 442.0
+offset_right = 852.0
+offset_bottom = 512.0
+
+[node name="LabelOleada" type="Label" parent="CanvasLayer" unique_id=743970872]
+offset_left = 403.0
+offset_top = 406.0
+offset_right = 757.0
+offset_bottom = 441.0
+text = "Oleada: x"
+label_settings = SubResource("LabelSettings_c6smh")
+horizontal_alignment = 1
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

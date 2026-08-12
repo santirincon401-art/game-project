@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ct7nmlmgjcv4x"]
+
+[ext_resource type="Texture2D" uid="uid://n87cyngsmaif" path="res://corazon.png" id="1_s26p4"]
+[ext_resource type="Script" uid="uid://schmyeg88kbf" path="res://texture_rect.gd" id="2_t1ul3"]
+[ext_resource type="Texture2D" uid="uid://dd3k22nv2jdbm" path="res://nocorazon.png" id="3_t1ul3"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jak5v"]
+load_path = "res://.godot/imported/corazon.png-51c3639be253bed3a82d8c299884a2a8.ctex"
+
+[node name="TextureRect" type="TextureRect" unique_id=349082663]
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 75.0
+offset_bottom = 75.0
+texture = ExtResource("1_s26p4")
+expand_mode = 2
+script = ExtResource("2_t1ul3")
+textura_llena = SubResource("CompressedTexture2D_jak5v")
+textura_vacia = ExtResource("3_t1ul3")

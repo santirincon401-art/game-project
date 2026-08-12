@@ -1,3 +1,8 @@
-res://City.tscn
 res://Player.tscn
 res://Player/character_body_2d.gd
+res://contenedor_corazones.gd
+res://texture_rect.gd
+res://Corazon.tscn
+res://puntaje.gd
+res://spawner.tscn
+res://spawner.gd

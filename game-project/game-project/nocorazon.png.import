@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnmkpnnfii701"
-path="res://.godot/imported/pixil-frame-0 (1).png-160dd9969d7e45d14d604c370b40e019.ctex"
+uid="uid://dd3k22nv2jdbm"
+path="res://.godot/imported/nocorazon.png-b40215fb1f854e46174fd1dba0392825.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pixil-frame-0 (1).png"
-dest_files=["res://.godot/imported/pixil-frame-0 (1).png-160dd9969d7e45d14d604c370b40e019.ctex"]
+source_file="res://nocorazon.png"
+dest_files=["res://.godot/imported/nocorazon.png-b40215fb1f854e46174fd1dba0392825.ctex"]
 
 [params]
 
