@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://b3w674xv0nysb"]
 
-[ext_resource type="Script" uid="uid://il650jo3m4u4" path="res://Player/character_body_2d.gd" id="1_q3lat"]
+[ext_resource type="Script" uid="uid://il650jo3m4u4" path="res://Player/Jugador.gd" id="1_q3lat"]
 [ext_resource type="Texture2D" uid="uid://lhpo51qsn6by" path="res://Player/portavelas_walk.png" id="2_tok1r"]
 [ext_resource type="Texture2D" uid="uid://6i2m5lk7dvxo" path="res://Player/portavelas_attack1.png" id="3_8g4oa"]
 [ext_resource type="Texture2D" uid="uid://bp71wfk82vyve" path="res://Player/portavelas_idle.png" id="3_ddoul"]
 [ext_resource type="Texture2D" uid="uid://oef2p31cqvlj" path="res://rotar.png" id="5_8g4oa"]
+
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ddoul"]
 radius = 60.0

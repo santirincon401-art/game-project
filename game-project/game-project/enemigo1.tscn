@@ -1,7 +1,8 @@
-[gd_scene load_steps=46 format=3 uid="uid://cbbpl1ctnca75"]
+[gd_scene format=3 uid="uid://cbbpl1ctnca75"]
 
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_mglo8"]
-[ext_resource type="Texture2D" path="res://golem_start.png" id="3_qutxh"]
+[ext_resource type="Script" uid="uid://cq4ymftcqxtue" path="res://Enemigo 1.gd" id="1_mglo8"]
+[ext_resource type="Texture2D" uid="uid://sbrscma24vtp" path="res://golem_start.png" id="3_qutxh"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mglo8"]
 atlas = ExtResource("3_qutxh")

@@ -40,7 +40,7 @@ func _physics_process(_delta):
 func _on_timer_timeout():
 	if jugador == null or escena_flecha == null or esta_muerto:
 		return
-
+	Sonidos.play("disparo_mago")
 	var flecha = escena_flecha.instantiate()
 	flecha.global_position = salida.global_position
 	flecha.direccion = (jugador.global_position - salida.global_position).normalized()
@@ -145,7 +145,7 @@ func curarse():
 func morir():
 	if esta_muerto:
 		return
-		
+	Sonidos.play("explosion")
 	esta_muerto = true
 	timer.stop()
 	

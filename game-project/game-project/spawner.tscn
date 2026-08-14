@@ -6,7 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://1kbirh2j4lpm" path="res://hormiga.tscn" id="4_7ocbr"]
 [ext_resource type="PackedScene" uid="uid://dpcaemlisab1h" path="res://escudo.tscn" id="5_h3fkd"]
 [ext_resource type="Texture2D" uid="uid://bj81o1yu7f5n8" path="res://portal.png" id="6_h3fkd"]
+[ext_resource type="Script" uid="uid://bc10eum5pk64t" path="res://portal.gd" id="7_lvome"]
 [ext_resource type="FontFile" uid="uid://btfgsnmytor2b" path="res://ThaleahFat.ttf" id="7_qmymf"]
+[ext_resource type="Texture2D" uid="uid://xblfgowww7pc" path="res://Enemigos(escenas)/mejora_score.png" id="8_g67ry"]
+[ext_resource type="Texture2D" uid="uid://w1q0caltqwhs" path="res://Enemigos(escenas)/mejora_damage.png" id="9_lvome"]
+[ext_resource type="Texture2D" uid="uid://bykjbctmj65wp" path="res://Enemigos(escenas)/mejora_speed.png" id="10_sy5nt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bt5rc"]
 atlas = ExtResource("6_h3fkd")
@@ -52,8 +56,23 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_u5j6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iv4qy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sy5nt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvome")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g67ry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bt5rc")
 }],
-"loop": 2,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
@@ -65,12 +84,26 @@ outline_size = 10
 outline_color = Color(0.27752772, 0.27752772, 0.27752772, 1)
 shadow_size = 13
 
-[node name="Spawner" type="Node2D" unique_id=367344787]
+[sub_resource type="LabelSettings" id="LabelSettings_853w4"]
+font = ExtResource("7_qmymf")
+font_size = 80
+outline_size = 11
+outline_color = Color(0.31431612, 0.31431612, 0.3143161, 1)
+shadow_size = 22
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="Spawner" type="Node2D" unique_id=367344787 node_paths=PackedStringArray("barra_oleada", "label_oleada", "menu_mejoras", "btn_puntos", "btn_dano", "btn_velocidad")]
 script = ExtResource("1_yp5lu")
 escena_golem = ExtResource("2_mcln3")
 escena_mago = ExtResource("3_bphdf")
 escena_hormiga = ExtResource("4_7ocbr")
 escena_escudo = ExtResource("5_h3fkd")
+barra_oleada = NodePath("CanvasLayer/BarraOleada")
+label_oleada = NodePath("CanvasLayer/LabelOleada")
+menu_mejoras = NodePath("CanvasLayer/MenuMejoras")
+btn_puntos = NodePath("CanvasLayer/MenuMejoras/Btnpuntos")
+btn_dano = NodePath("CanvasLayer/MenuMejoras/Btndano")
+btn_velocidad = NodePath("CanvasLayer/MenuMejoras/Btnvelocidad")
 
 [node name="Spawn1" type="Marker2D" parent="." unique_id=1198133317]
 position = Vector2(-1, -694)
@@ -93,24 +126,28 @@ position = Vector2(-1.9999971, -692.5)
 scale = Vector2(1.7499999, 1.7343743)
 sprite_frames = SubResource("SpriteFrames_c6smh")
 frame_progress = 0.34040892
+script = ExtResource("7_lvome")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=813131089]
 position = Vector2(-834, -5.5)
 scale = Vector2(1.7499999, 1.7343743)
 sprite_frames = SubResource("SpriteFrames_c6smh")
 frame_progress = 0.153289
+script = ExtResource("7_lvome")
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="." unique_id=2032142061]
 position = Vector2(793, 1.5)
 scale = Vector2(1.7499999, 1.7343743)
 sprite_frames = SubResource("SpriteFrames_c6smh")
 frame_progress = 0.153289
+script = ExtResource("7_lvome")
 
 [node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="." unique_id=470565100]
 position = Vector2(5.999995, 860.5)
 scale = Vector2(1.7499999, 1.7343743)
 sprite_frames = SubResource("SpriteFrames_c6smh")
 frame_progress = 0.153289
+script = ExtResource("7_lvome")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1374651768]
 
@@ -129,4 +166,63 @@ text = "Oleada: x"
 label_settings = SubResource("LabelSettings_c6smh")
 horizontal_alignment = 1
 
+[node name="MenuMejoras" type="Panel" parent="CanvasLayer" unique_id=615967746]
+process_mode = 3
+offset_right = 1138.0
+offset_bottom = 642.0
+
+[node name="Btnpuntos" type="Button" parent="CanvasLayer/MenuMejoras" unique_id=2348839]
+process_mode = 3
+layout_mode = 0
+offset_left = 66.0
+offset_top = 169.0
+offset_right = 389.0
+offset_bottom = 623.0
+text = "+0.25 puntos"
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MenuMejoras/Btnpuntos" unique_id=443494471]
+position = Vector2(160, 227)
+scale = Vector2(4.9375, 4.6875)
+texture = ExtResource("8_g67ry")
+
+[node name="Btndano" type="Button" parent="CanvasLayer/MenuMejoras" unique_id=532345658]
+process_mode = 3
+layout_mode = 0
+offset_left = 430.0
+offset_top = 167.0
+offset_right = 753.0
+offset_bottom = 621.0
+text = "+0.25 daño"
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MenuMejoras/Btndano" unique_id=1344487534]
+position = Vector2(160, 227)
+scale = Vector2(4.9375, 4.6875)
+texture = ExtResource("9_lvome")
+
+[node name="Btnvelocidad" type="Button" parent="CanvasLayer/MenuMejoras" unique_id=1158568611]
+process_mode = 3
+layout_mode = 0
+offset_left = 799.0
+offset_top = 171.0
+offset_right = 1122.0
+offset_bottom = 625.0
+text = "+0.25 velocidad"
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MenuMejoras/Btnvelocidad" unique_id=1187840597]
+position = Vector2(160, 227)
+scale = Vector2(4.9375, 4.6875)
+texture = ExtResource("10_sy5nt")
+
+[node name="Label" type="Label" parent="CanvasLayer/MenuMejoras" unique_id=1719997857]
+layout_mode = 0
+offset_left = 218.0
+offset_top = 45.0
+offset_right = 893.0
+offset_bottom = 130.0
+text = "Choose one upgrade:"
+label_settings = SubResource("LabelSettings_853w4")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="CanvasLayer/MenuMejoras/Btnpuntos" to="." method="_on_btnpuntos_pressed"]
+[connection signal="pressed" from="CanvasLayer/MenuMejoras/Btndano" to="." method="_on_btndano_pressed"]
+[connection signal="pressed" from="CanvasLayer/MenuMejoras/Btnvelocidad" to="." method="_on_btnvelocidad_pressed"]

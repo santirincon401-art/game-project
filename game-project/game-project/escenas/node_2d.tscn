@@ -1,29 +1,33 @@
-[gd_scene load_steps=6 format=3 uid="uid://cdlag3algdtgs"]
+[gd_scene format=3 uid="uid://cdlag3algdtgs"]
 
-[ext_resource type="PackedScene" uid="uid://q7w545oyigav" path="res://Enemigos(escenas)/hormiga.tscn" id="2_0e48y"]
 [ext_resource type="PackedScene" uid="uid://cpor60ag52ni5" path="res://Enemigos(escenas)/mago.tscn" id="2_0hol4"]
-[ext_resource type="PackedScene" uid="uid://b3w674xv0nysb" path="res://Player/Player.tscn" id="2_epypp"]
-[ext_resource type="PackedScene" uid="uid://b74d00djjku7a" path="res://Enemigos(escenas)/escudo.tscn" id="4_0hol4"]
+[ext_resource type="PackedScene" uid="uid://dpcaemlisab1h" path="res://escudo.tscn" id="3_wvvap"]
+[ext_resource type="PackedScene" uid="uid://i2gfe47irk8y" path="res://Player.tscn" id="5_cey3t"]
+[ext_resource type="PackedScene" uid="uid://1kbirh2j4lpm" path="res://hormiga.tscn" id="5_g5y43"]
 [ext_resource type="PackedScene" uid="uid://c11cugnwonpis" path="res://escenas/enemigo1.tscn" id="5_q6r6c"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=2060370811]
 
-[node name="hormiga" parent="." instance=ExtResource("2_0e48y")]
-position = Vector2(997, 40)
+[node name="Golem piedra" parent="." unique_id=1161258498 instance=ExtResource("5_q6r6c")]
+position = Vector2(307, -269)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_0hol4")]
-position = Vector2(233, 723)
+[node name="Golem piedra2" parent="." unique_id=1677634401 instance=ExtResource("5_q6r6c")]
+position = Vector2(-876, -323)
 
-[node name="Jugador" parent="." instance=ExtResource("2_epypp")]
-position = Vector2(-271, 54)
+[node name="CharacterBody2D" parent="." unique_id=201429479 instance=ExtResource("2_0hol4")]
+position = Vector2(-824, 185)
 
-[node name="CharacterBody2D2" parent="." instance=ExtResource("4_0hol4")]
-position = Vector2(419, 942)
-scale = Vector2(1.0578, 1.01445)
+[node name="CharacterBody2D2" parent="." unique_id=560472116 instance=ExtResource("2_0hol4")]
+position = Vector2(270, 171)
 
-[node name="Golem piedra" parent="." instance=ExtResource("5_q6r6c")]
-position = Vector2(760, 1116)
+[node name="CharacterBody2D3" parent="." unique_id=2067270559 instance=ExtResource("3_wvvap")]
+position = Vector2(-1003, 452)
 
-[node name="CharacterBody2D3" parent="." groups=["escudo"] instance=ExtResource("4_0hol4")]
-position = Vector2(143, 1126)
-scale = Vector2(1.0578, 1.01445)
+[node name="hormiga" parent="." unique_id=1757528994 instance=ExtResource("5_g5y43")]
+position = Vector2(734, -265)
+
+[node name="hormiga2" parent="." unique_id=984323186 instance=ExtResource("5_g5y43")]
+position = Vector2(-1453, -380)
+
+[node name="Jugador" parent="." unique_id=528975174 instance=ExtResource("5_cey3t")]
+position = Vector2(-316, 47)

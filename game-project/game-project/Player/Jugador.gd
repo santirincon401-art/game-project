@@ -7,6 +7,7 @@ extends CharacterBody2D
 @export var vida_maxima: int = 7
 @onready var contenedor_corazones: HBoxContainer = $CanvasLayer/ContenedorCorazones
 @export var escena_corazon: PackedScene # Asigna aquí tu escena "corazon.tscn" desde el Inspector
+var multipuntos = 1
 var puntos: int = 0
 var vida: int
 var atacando := false
@@ -166,6 +167,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		return
 
 	if atacando and body.has_method("recibir_dano"):
+		Sonidos.play("Hit_ene")
 		# 1. VERIFICAR SI ES INVENCIBLE (Suponiendo que el enemigo tiene variable 'invencible')
 		if "invencible" in body and body.invencible:
 			return
@@ -201,7 +203,7 @@ func animar_combo() -> void:
 func recibir_dano(dano_recibido: int) -> void:
 	if invencible:
 		return
-
+	Sonidos.play("Hit_jugador")
 	invencible = true
 	vida = clampi(vida - dano_recibido, 0, vida_maxima)
 	actualizar_hud()
@@ -233,7 +235,7 @@ func curar(cantidad: int) -> void:
 
 
 func agregar_puntos(puntos_agregados: int) -> void:
-	puntos += puntos_agregados
+	puntos += puntos_agregados * multipuntos
 	actualizar_hud()
 	animar_score()
 # Inicia un bucle infinito de latido suave para el score
@@ -269,7 +271,7 @@ func actualizar_hud() -> void:
 	# 2. Actualizar Sistema de Corazones Visuales
 	_actualizar_corazones_visuales()
 		
-	if puntos >= 250:
+	if puntos >= 2500:
 		get_tree().change_scene_to_file("res://ganar.tscn")
 
 

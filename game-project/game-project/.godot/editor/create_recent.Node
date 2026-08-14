@@ -1,4 +1,7 @@
 Label
+Sprite2D
+Button
+Panel
 ProgressBar
 CanvasLayer
 AnimatedSprite2D
@@ -7,8 +10,5 @@ Node2D
 TextureRect
 HBoxContainer
 TileMapLayer
-Sprite2D
 VisibleOnScreenEnabler2D
 Marker2D
-Area2D
-Timer

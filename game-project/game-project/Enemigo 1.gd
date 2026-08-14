@@ -19,6 +19,7 @@ func _efecto_dano_azul():
 
 # Función ejecutada cuando el jugador lo ataca
 func recibir_dano(dano: int) -> void:
+	
 	if invulnerable: 
 		_efecto_dano_azul()
 		return

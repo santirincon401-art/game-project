@@ -35,10 +35,11 @@ func recibir_dano(dano: int) -> void:
 	# Si se queda sin vida, desaparece
 	if vida <= 0:
 		if vida <= -1:
-			jugador.agregar_puntos(30)
+			if jugador:
+				jugador.agregar_puntos(30)
 		muerto = true
 		sprite.play("pum")
-		
+		Sonidos.play("explosion")
 		$CollisionShape2D.disabled = true
 		set_physics_process(false)
 

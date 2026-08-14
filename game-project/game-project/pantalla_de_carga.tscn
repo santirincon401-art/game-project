@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://csb02rj7v3wio"]
+[gd_scene format=3 uid="uid://csb02rj7v3wio"]
 
 [ext_resource type="Script" uid="uid://b4aut062q87h4" path="res://button.gd" id="1_35hou"]
 [ext_resource type="Texture2D" uid="uid://bfsah223jubcf" path="res://Sprite-0003.png" id="2_nl72e"]
@@ -43,7 +43,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8s4ut")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -57,7 +57,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2dstv")
 }],
-"loop": true,
+"loop": 1,
 "name": &"dormir",
 "speed": 5.0
 }]
@@ -76,7 +76,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_a3mga")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -84,7 +84,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_40la1")
 }],
-"loop": true,
+"loop": 1,
 "name": &"dormir",
 "speed": 5.0
 }]
@@ -98,11 +98,11 @@ outline_color = Color(1, 0.419608, 0.176471, 1)
 shadow_size = 41
 shadow_color = Color(0.882353, 0, 0, 1)
 
-[node name="Pantalla de carga" type="Node2D"]
+[node name="Pantalla de carga" type="Node2D" unique_id=1406744188]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=190609759]
 
-[node name="Jugar" type="Button" parent="CanvasLayer"]
+[node name="Jugar" type="Button" parent="CanvasLayer" unique_id=1419330550]
 offset_left = 475.0
 offset_top = 312.0
 offset_right = 668.0
@@ -110,13 +110,13 @@ offset_bottom = 388.0
 text = "	play"
 script = ExtResource("1_35hou")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Jugar"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Jugar" unique_id=422365559]
 position = Vector2(91, 39)
 scale = Vector2(2.82812, 2.875)
 sprite_frames = SubResource("SpriteFrames_40la1")
 frame_progress = 0.207818
 
-[node name="Salir" type="Button" parent="CanvasLayer"]
+[node name="Salir" type="Button" parent="CanvasLayer" unique_id=706039519]
 offset_left = 424.0
 offset_top = 445.0
 offset_right = 698.0
@@ -124,13 +124,13 @@ offset_bottom = 531.0
 text = "Exit"
 script = ExtResource("2_pjvae")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Salir"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Salir" unique_id=274858971]
 position = Vector2(138, 46)
 scale = Vector2(2.74219, 2.65625)
 sprite_frames = SubResource("SpriteFrames_h6p0w")
 animation = &"dormir"
 
-[node name="Label" type="Label" parent="CanvasLayer"]
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1854587913]
 offset_left = 284.0
 offset_top = 83.0
 offset_right = 1013.0
@@ -138,7 +138,7 @@ offset_bottom = 287.0
 text = "The game"
 label_settings = SubResource("LabelSettings_5x53v")
 
-[node name="WhatsAppImage2026-08-09At7_15_49Pm" type="Sprite2D" parent="."]
+[node name="WhatsAppImage2026-08-09At7_15_49Pm" type="Sprite2D" parent="." unique_id=208038860]
 position = Vector2(573, 327)
 scale = Vector2(1.97556, 2.0148)
 texture = ExtResource("6_h6p0w")

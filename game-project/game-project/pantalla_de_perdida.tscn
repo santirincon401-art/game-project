@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://6hb2iayr5v42"]
 
+[ext_resource type="Script" uid="uid://i44tq8lo1l7q" path="res://pantalla_de_perdida.gd" id="1_3vd1q"]
 [ext_resource type="Script" uid="uid://b4aut062q87h4" path="res://button.gd" id="1_7vidt"]
 [ext_resource type="Texture2D" uid="uid://bfsah223jubcf" path="res://Sprite-0003.png" id="2_nbjfm"]
 [ext_resource type="Script" uid="uid://c2srkbn8nb01g" path="res://iralmenu.gd" id="2_t62ao"]
@@ -100,6 +101,7 @@ shadow_size = 41
 shadow_color = Color(0.882353, 0, 0, 1)
 
 [node name="Pantalla_de_perdida" type="Node2D" unique_id=1183416015]
+script = ExtResource("1_3vd1q")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1076254234]
 

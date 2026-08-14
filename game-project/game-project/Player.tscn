@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://i2gfe47irk8y"]
 
-[ext_resource type="Script" uid="uid://il650jo3m4u4" path="res://Player/character_body_2d.gd" id="1_q3lat"]
+[ext_resource type="Script" uid="uid://il650jo3m4u4" path="res://Player/Jugador.gd" id="1_q3lat"]
 [ext_resource type="Texture2D" uid="uid://lhpo51qsn6by" path="res://Player/portavelas_walk.png" id="2_tok1r"]
 [ext_resource type="PackedScene" uid="uid://ct7nmlmgjcv4x" path="res://Corazon.tscn" id="2_wi0c6"]
 [ext_resource type="Texture2D" uid="uid://6i2m5lk7dvxo" path="res://Player/portavelas_attack1.png" id="3_8g4oa"]

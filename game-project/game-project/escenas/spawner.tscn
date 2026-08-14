@@ -1,48 +1,50 @@
-[gd_scene load_steps=7 format=3 uid="uid://d3i3pu8cxgsqp"]
+[gd_scene format=3 uid="uid://d3i3pu8cxgsqp"]
 
-[ext_resource type="Script" uid="uid://bghda0r5snru7" path="res://spawner.gd" id="1_yp5lu"]
-[ext_resource type="PackedScene" uid="uid://c11cugnwonpis" path="res://enemigo1.tscn" id="2_mcln3"]
+[ext_resource type="Script" uid="uid://d3x36fueui8or" path="res://spawner.gd" id="1_yp5lu"]
+[ext_resource type="PackedScene" uid="uid://c11cugnwonpis" path="res://escenas/enemigo1.tscn" id="2_mcln3"]
 [ext_resource type="Texture2D" uid="uid://cw0ny70tcnyki" path="res://icon.svg" id="2_ttk4a"]
-[ext_resource type="PackedScene" uid="uid://cpor60ag52ni5" path="res://mago.tscn" id="3_bphdf"]
-[ext_resource type="PackedScene" uid="uid://q7w545oyigav" path="res://hormiga.tscn" id="4_7ocbr"]
-[ext_resource type="Texture2D" uid="uid://dya0oijb3eolk" path="res://pixil-frame-0 (13).png" id="5_mv5bd"]
+[ext_resource type="PackedScene" uid="uid://cpor60ag52ni5" path="res://Enemigos(escenas)/mago.tscn" id="3_bphdf"]
+[ext_resource type="PackedScene" uid="uid://q7w545oyigav" path="res://Enemigos(escenas)/hormiga.tscn" id="4_7ocbr"]
+[ext_resource type="Texture2D" uid="uid://byq51t1jjad5x" path="res://pixil-frame-0 (13).png" id="5_mv5bd"]
+[ext_resource type="PackedScene" uid="uid://b74d00djjku7a" path="res://Enemigos(escenas)/escudo.tscn" id="5_vnemq"]
 
-[node name="Spawner" type="Node2D"]
+[node name="Spawner" type="Node2D" unique_id=1206312556]
 script = ExtResource("1_yp5lu")
 escena_golem = ExtResource("2_mcln3")
 escena_mago = ExtResource("3_bphdf")
 escena_hormiga = ExtResource("4_7ocbr")
+escena_escudo = ExtResource("5_vnemq")
 
-[node name="Spawn1" type="Marker2D" parent="."]
+[node name="Spawn1" type="Marker2D" parent="." unique_id=247423970]
 position = Vector2(-1, -694)
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=176510938]
 wait_time = 0.22
 autostart = true
 
-[node name="Spawn2" type="Marker2D" parent="."]
+[node name="Spawn2" type="Marker2D" parent="." unique_id=385702402]
 position = Vector2(4, 858)
 
-[node name="Spawn3" type="Marker2D" parent="."]
+[node name="Spawn3" type="Marker2D" parent="." unique_id=813919528]
 position = Vector2(791, 4)
 
-[node name="Spawn4" type="Marker2D" parent="."]
+[node name="Spawn4" type="Marker2D" parent="." unique_id=1581272109]
 position = Vector2(-836, -11)
 
-[node name="Icon" type="Sprite2D" parent="."]
+[node name="Icon" type="Sprite2D" parent="." unique_id=391233236]
 position = Vector2(-844, -6)
 scale = Vector2(2.59375, 2.375)
 texture = ExtResource("5_mv5bd")
 
-[node name="Icon2" type="Sprite2D" parent="."]
+[node name="Icon2" type="Sprite2D" parent="." unique_id=2054298024]
 position = Vector2(4, -695)
 texture = ExtResource("2_ttk4a")
 
-[node name="Icon3" type="Sprite2D" parent="."]
+[node name="Icon3" type="Sprite2D" parent="." unique_id=515785111]
 position = Vector2(771, 4)
 texture = ExtResource("2_ttk4a")
 
-[node name="Icon4" type="Sprite2D" parent="."]
+[node name="Icon4" type="Sprite2D" parent="." unique_id=1699410569]
 position = Vector2(-1, 863)
 texture = ExtResource("2_ttk4a")
 
