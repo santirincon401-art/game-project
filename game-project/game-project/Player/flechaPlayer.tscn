@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bwcxj2lga2fhq"]
 
-[ext_resource type="Script" uid="uid://dtlmb7tw8xvqa" path="res://flecha.gd" id="1_0v602"]
+[ext_resource type="Script" uid="uid://d0okit4qo0chx" path="res://Player/flecha_player.gd" id="1_er4aq"]
 [ext_resource type="Texture2D" uid="uid://ckqf20vogglub" path="res://fuegito.png" id="2_8yxqa"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kyqwc"]
@@ -36,7 +36,7 @@ animations = [{
 }]
 
 [node name="Area2D" type="Area2D" unique_id=2016643552]
-script = ExtResource("1_0v602")
+script = ExtResource("1_er4aq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1554933104]
 shape = SubResource("CircleShape2D_kyqwc")

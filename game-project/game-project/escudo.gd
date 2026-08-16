@@ -78,6 +78,7 @@ func _on_animation_finished():
 # --- DAÑO Y PARPADEO ---
 
 func recibir_dano(dano_recibido):
+
 	if esta_muerto:
 		return
 

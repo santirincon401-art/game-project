@@ -2,7 +2,7 @@ extends Area2D
 
 var direccion: Vector2 = Vector2.ZERO
 
-@export var velocidad := 400.0
+@export var velocidad := 1000
 
 func _process(delta):
 	position += direccion * velocidad * delta
@@ -17,9 +17,8 @@ func _ready():
 	body_entered.connect(_on_body_entered)
 	animated_sprite.play("default")
 
-
 func _on_body_entered(body):
-	if body.is_in_group("enemigo"):
+	if body.is_in_group("jugador"):
 		body.recibir_dano(dano)
 		queue_free()
 
@@ -28,3 +27,8 @@ func _on_body_entered(body):
 
 func _on_visible_on_screen_enabler_2d_screen_exited() -> void:
 	queue_free()
+var propietario = null
+func agregar_puntos(cantidad: int) -> void:
+	# La flecha recibe la orden y se la pasa al jugador
+	if is_instance_valid(propietario) and propietario.has_method("agregar_puntos"):
+		propietario.agregar_puntos(cantidad)

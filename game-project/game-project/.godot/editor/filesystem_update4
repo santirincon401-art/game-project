@@ -1,3 +1,23 @@
+res://Player.tscn
 res://Player/Jugador.gd
-res://Player/flechaPlayer.tscn
+res://Player/flecha_player.gd
 res://flecha.gd
+res://Player/flechaPlayer.tscn
+res://Enemigo 1.gd
+res://alma.gd
+res://alma.tscn
+res://pruebas.tscn
+res://button.gd
+res://City.tscn
+res://escudo.gd
+res://hormigilla.gd
+res://mago.gd
+res://flecha.tscn
+res://hormiga.tscn
+res://gato_demonio.tscn
+res://el_risas.tscn
+res://el_risas.gd
+res://lloron.gd
+res://fuego_azul.gd
+res://lloron.tscn
+res://fuego_azul.tscn

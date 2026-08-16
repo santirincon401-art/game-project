@@ -37,6 +37,7 @@ func recibir_dano(dano: int) -> void:
 		if vida <= -1:
 			if jugador:
 				jugador.agregar_puntos(30)
+				
 		muerto = true
 		sprite.play("pum")
 		Sonidos.play("explosion")

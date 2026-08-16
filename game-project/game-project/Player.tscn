@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ct7nmlmgjcv4x" path="res://Corazon.tscn" id="2_wi0c6"]
 [ext_resource type="Texture2D" uid="uid://6i2m5lk7dvxo" path="res://Player/portavelas_attack1.png" id="3_8g4oa"]
 [ext_resource type="Texture2D" uid="uid://bp71wfk82vyve" path="res://Player/portavelas_idle.png" id="3_ddoul"]
+[ext_resource type="PackedScene" uid="uid://bgihqqn6jqhy3" path="res://alma.tscn" id="3_wi0c6"]
 [ext_resource type="Texture2D" uid="uid://dnbgl5fb6lxro" path="res://shift.png" id="5_cxr5p"]
 [ext_resource type="Texture2D" uid="uid://dhv5pcr1xs4sc" path="res://guardar.png" id="5_tdg3f"]
 [ext_resource type="FontFile" uid="uid://btfgsnmytor2b" path="res://ThaleahFat.ttf" id="7_dtqjt"]
@@ -200,6 +201,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_oudfo")
+}],
+"loop": 1,
+"name": &"muerto",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_tdg3f")
 }, {
 "duration": 1.0,
@@ -230,6 +239,7 @@ shadow_color = Color(0, 0, 0, 1)
 [node name="Jugador" type="CharacterBody2D" parent="." unique_id=596104234]
 script = ExtResource("1_q3lat")
 escena_corazon = ExtResource("2_wi0c6")
+escena_alma = ExtResource("3_wi0c6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador" unique_id=1123400622]
 position = Vector2(1, 1)
@@ -239,7 +249,7 @@ shape = SubResource("CircleShape2D_ddoul")
 position = Vector2(3, -18)
 scale = Vector2(2.41, 2.15)
 sprite_frames = SubResource("SpriteFrames_3mea3")
-animation = &"desguardar"
+animation = &"muerto"
 
 [node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=1516740577 groups=["jugador"]]
 zoom = Vector2(0.5, 0.5)
@@ -284,6 +294,9 @@ offset_top = 371.0
 offset_right = 294.0
 offset_bottom = 398.0
 show_percentage = false
+
+[node name="Marker2D" type="Marker2D" parent="Jugador" unique_id=727562417]
+position = Vector2(66, -1)
 
 [connection signal="animation_finished" from="Jugador/AnimatedSprite2D" to="Jugador" method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="Jugador/Area2D" to="Jugador" method="_on_area_2d_body_entered"]

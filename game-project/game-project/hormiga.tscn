@@ -44,7 +44,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_iwtyl"]
-radius = 63.0317
+radius = 91.197586
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dpllr"]
 radius = 595.142
@@ -53,8 +53,8 @@ radius = 595.142
 script = ExtResource("1_p4hs0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1698092912]
-position = Vector2(-16.5, -16.42)
-scale = Vector2(5.28125, 4.84875)
+position = Vector2(-18.5, -6.9199963)
+scale = Vector2(5.15625, 4.255)
 sprite_frames = SubResource("SpriteFrames_rrn34")
 frame_progress = 0.8722458
 

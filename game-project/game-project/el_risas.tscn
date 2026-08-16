@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://brieekvs10pfr"]
+
+[ext_resource type="Script" uid="uid://b3qo3qcu2p8ro" path="res://el_risas.gd" id="1_5dtta"]
+[ext_resource type="Texture2D" uid="uid://bvwhibyasx2tk" path="res://demonio.png" id="2_hxi4w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjiqv"]
+atlas = ExtResource("2_hxi4w")
+region = Rect2(0, 72, 85, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvux0"]
+atlas = ExtResource("2_hxi4w")
+region = Rect2(85, 72, 85, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a4wvf"]
+atlas = ExtResource("2_hxi4w")
+region = Rect2(170, 72, 85, 72)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sw6uf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tjiqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvux0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a4wvf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvux0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tjiqv")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_errdc"]
+radius = 67.0
+height = 154.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mglo8"]
+radius = 371.01212
+
+[node name="Risas" type="CharacterBody2D" unique_id=842824959 groups=["enemigos"]]
+script = ExtResource("1_5dtta")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1109126409]
+position = Vector2(-9.536743e-07, -11)
+scale = Vector2(2.2705884, 2.1805553)
+sprite_frames = SubResource("SpriteFrames_sw6uf")
+frame_progress = 0.4093975
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1794014486]
+position = Vector2(-2, -1)
+shape = SubResource("CapsuleShape2D_errdc")
+
+[node name="DetectorRango" type="Area2D" parent="." unique_id=987330222]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectorRango" unique_id=991212085]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_mglo8")
+
+[connection signal="body_entered" from="DetectorRango" to="." method="_on_detector_rango_body_entered"]
+[connection signal="body_exited" from="DetectorRango" to="." method="_on_detector_rango_body_exited"]

@@ -154,5 +154,6 @@ func morir():
 
 	if jugador != null and jugador.has_method("agregar_puntos"):
 		jugador.agregar_puntos(20)
+		
 
 	sprite.play("dead")

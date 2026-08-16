@@ -1,8 +1,9 @@
-Marker2D
-Timer
 CollisionShape2D
 AnimatedSprite2D
+Area2D
 CharacterBody2D
+Marker2D
+Timer
 Label
 Sprite2D
 Button
@@ -11,5 +12,3 @@ ProgressBar
 CanvasLayer
 Node2D
 TextureRect
-HBoxContainer
-TileMapLayer

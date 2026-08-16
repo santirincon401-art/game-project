@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://su0xu8asoh0"]
+
+[ext_resource type="Script" uid="uid://cq4ymftcqxtue" path="res://Enemigo 1.gd" id="1_sw6uf"]
+[ext_resource type="Texture2D" uid="uid://bvwhibyasx2tk" path="res://demonio.png" id="2_rhh2x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dkmny"]
+atlas = ExtResource("2_rhh2x")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m64dl"]
+atlas = ExtResource("2_rhh2x")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24tdy"]
+atlas = ExtResource("2_rhh2x")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6kjl"]
+atlas = ExtResource("2_rhh2x")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pojfs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkmny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkmny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkmny")
+}],
+"loop": 1,
+"name": &"daño",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m64dl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m64dl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24tdy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24tdy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6kjl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24tdy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24tdy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m64dl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m64dl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m64dl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m64dl")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_errdc"]
+radius = 67.0
+height = 154.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mglo8"]
+radius = 371.01212
+
+[node name="Gato demonio" type="CharacterBody2D" unique_id=842824959 groups=["enemigos"]]
+script = ExtResource("1_sw6uf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1109126409]
+position = Vector2(4.7683716e-07, -1)
+scale = Vector2(2.77, 2.51)
+sprite_frames = SubResource("SpriteFrames_pojfs")
+animation = &"daño"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1794014486]
+position = Vector2(-2, -1)
+shape = SubResource("CapsuleShape2D_errdc")
+
+[node name="DetectorRango" type="Area2D" parent="." unique_id=987330222]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectorRango" unique_id=991212085]
+position = Vector2(1, -1)
+shape = SubResource("CircleShape2D_mglo8")
+
+[connection signal="body_entered" from="DetectorRango" to="." method="_on_detector_rango_body_entered"]
+[connection signal="body_exited" from="DetectorRango" to="." method="_on_detector_rango_body_exited"]

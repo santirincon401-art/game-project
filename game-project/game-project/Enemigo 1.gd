@@ -1,45 +1,43 @@
 extends CharacterBody2D
 
-@export var velocidad: float = 100.0
-@export var vida: int = 3
+@export var velocidad: float = 250.0
+@export var vida: int = 1
 
 var jugador: Node2D = null
-var esta_en_rango: bool = false
-var invulnerable := false 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 func _ready() -> void:
-	sprite.play("muerto")
-	invulnerable = false
+	# Arranca en default y busca al jugador automáticamente en la escena
+	sprite.play("default")
 	sprite.animation_finished.connect(_on_animation_finished)
-func _efecto_dano_azul():
-	sprite.modulate = Color(0.3, 0.7, 1.0)
+	
+	# Intenta encontrar al jugador al iniciar (si está en el grupo "jugador")
+	jugador = get_tree().get_first_node_in_group("jugador")
+	if not jugador:
+		# Intento alternativo por nombre si no usa grupos
+		jugador = get_tree().current_scene.find_child("Jugador", true, false)
+
+# Función para manejar la visibilidad suave con un Tween (al entrar/salir de rango)
+func set_invisible(es_invisible: bool) -> void:
+	var target_alpha = 0.0 if es_invisible else 1.0
 	var tween = create_tween()
-	tween.tween_property(sprite, "modulate", Color.WHITE, 0.25)
+	tween.tween_property(sprite, "modulate:a", target_alpha, 0.5)
 
 # Función ejecutada cuando el jugador lo ataca
 func recibir_dano(dano: int) -> void:
-	
-	if invulnerable: 
-		_efecto_dano_azul()
-		return
 	vida -= dano
 	
-	print("Vida del enemigo:", vida)
+	# Reproduce la animación de daño
+	sprite.play("daño")
 
-	# EFECTO ROJO DE DAÑO (Tinte temporal)
-	var tween = create_tween()
-	sprite.modulate = Color(1, 0.2, 0.2)
-	tween.tween_property(sprite, "modulate", Color(1, 1, 1), 0.4)
-
-	# Si se queda sin vida, desaparece
 	if vida <= 0:
-		jugador.agregar_puntos(10)
+		if jugador and jugador.has_method("agregar_puntos"):
+			jugador.agregar_puntos(10)
 		queue_free()
 
 func _physics_process(_delta: float) -> void:
-	# Movimiento de persecución
-	if esta_en_rango and jugador and sprite.animation == "default":
+	# Siempre persigue al jugador a velocidad de 250
+	if jugador:
 		var direccion = (jugador.global_position - global_position).normalized()
 		velocity = direccion * velocidad
 
@@ -50,29 +48,21 @@ func _physics_process(_delta: float) -> void:
 		move_and_slide()
 	else:
 		velocity = Vector2.ZERO
+		# Reintentar buscar al jugador si se perdió la referencia
+		jugador = get_tree().get_first_node_in_group("jugador")
 
-# EL JUGADOR ENTRA AL RANGO
+# EL GATO ENTRA AL RANGO (Se vuelve invisible)
 func _on_detector_rango_body_entered(body: Node) -> void:
 	if body.is_in_group("jugador") or body.name == "Jugador":
-		jugador = body
-		esta_en_rango = true
-		sprite.play("entrada")
+		jugador = body # Actualiza referencia por si acaso
+		set_invisible(true)
 
-# EL JUGADOR SALE DEL RANGO
+# EL GATO SALE DEL RANGO (Vuelve a ser visible)
 func _on_detector_rango_body_exited(body: Node) -> void:
 	if body.is_in_group("jugador") or body == jugador or body.name == "Jugador":
-		jugador = null
-		esta_en_rango = false
-		sprite.play("salida")
+		set_invisible(false)
 
-# CONTROL DE TRANSICIONES DE ANIMACIÓN
+# CONTROL DE TRANSICIÓN DE ANIMACIÓN
 func _on_animation_finished() -> void:
-	if sprite.animation == "entrada" and esta_en_rango:
+	if sprite.animation == "daño":
 		sprite.play("default")
-
-	if sprite.animation == "salida" and not esta_en_rango:
-		sprite.play("muerto")
-
-
-func _on_timer_timeout() -> void:
-	pass # Replace with function body.
