@@ -1,19 +1,4 @@
-res://spawner.gd
-res://Player/character_body_2d.gd
-res://spawner.tscn
-res://hormigilla.gd
-res://portal.gd
-res://sonidos.gd
-res://Jugador.gd
-res://City.tscn
-res://mago.gd
-res://Player.tscn
-res://Player/Jugador.gd
-res://Enemigo 1.gd
-res://escenas/spawner.tscn
-res://iralmenu.gd
-res://escenas/jugar.gd
-res://pantalla_de_carga.tscn
+res://escenas/enemigo1.tscn
+res://jefe_final.gd
+res://node_2d.tscn
 res://button.gd
-res://pantalla_de_perdida.tscn
-res://pantalla_de_perdida.gd
