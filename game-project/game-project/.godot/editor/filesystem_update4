@@ -1,4 +1,3 @@
-res://escenas/enemigo1.tscn
-res://jefe_final.gd
-res://node_2d.tscn
-res://button.gd
+res://Player/Jugador.gd
+res://Player/flechaPlayer.tscn
+res://flecha.gd

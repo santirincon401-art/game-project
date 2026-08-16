@@ -1,3 +1,4 @@
+Marker2D
 Timer
 CollisionShape2D
 AnimatedSprite2D
@@ -12,4 +13,3 @@ Node2D
 TextureRect
 HBoxContainer
 TileMapLayer
-VisibleOnScreenEnabler2D

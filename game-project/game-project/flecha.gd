@@ -19,7 +19,7 @@ func _ready():
 
 
 func _on_body_entered(body):
-	if body.is_in_group("jugador"):
+	if body.is_in_group("enemigo"):
 		body.recibir_dano(dano)
 		queue_free()
 

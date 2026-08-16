@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://b3w674xv0nysb"]
 
 [ext_resource type="Script" uid="uid://il650jo3m4u4" path="res://Player/Jugador.gd" id="1_q3lat"]
+[ext_resource type="PackedScene" uid="uid://bwcxj2lga2fhq" path="res://Player/flechaPlayer.tscn" id="2_6ysni"]
 [ext_resource type="Texture2D" uid="uid://lhpo51qsn6by" path="res://Player/portavelas_walk.png" id="2_tok1r"]
 [ext_resource type="Texture2D" uid="uid://6i2m5lk7dvxo" path="res://Player/portavelas_attack1.png" id="3_8g4oa"]
 [ext_resource type="Texture2D" uid="uid://bp71wfk82vyve" path="res://Player/portavelas_idle.png" id="3_ddoul"]
 [ext_resource type="Texture2D" uid="uid://oef2p31cqvlj" path="res://rotar.png" id="5_8g4oa"]
-
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ddoul"]
 radius = 60.0
@@ -195,6 +195,7 @@ shadow_color = Color(0, 0, 0, 1)
 
 [node name="Jugador" type="CharacterBody2D" parent="." unique_id=1777022246 groups=["jugador"]]
 script = ExtResource("1_q3lat")
+escena_flecha = ExtResource("2_6ysni")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador" unique_id=580677419]
 position = Vector2(1, 1)
@@ -237,6 +238,8 @@ text = "Score: 0"
 label_settings = SubResource("LabelSettings_8g4oa")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1498900720]
 
 [connection signal="animation_finished" from="Jugador/AnimatedSprite2D" to="Jugador" method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="Jugador/Area2D" to="Jugador" method="_on_area_2d_body_entered"]
