@@ -252,7 +252,7 @@ func animar_score() -> void:
 func actualizar_hud() -> void:
 	if label_puntos: label_puntos.text = "Score: " + str(puntos)
 	_actualizar_corazones_visuales()
-	if puntos >= 2500: get_tree().change_scene_to_file("res://ganar.tscn")
+	if puntos >= 2500: get_tree().change_scene_to_file("res://escenas/Hud/Ganar/ganar.tscn")
 
 func _actualizar_corazones_visuales() -> void:
 	if not contenedor_corazones: return
@@ -318,4 +318,4 @@ func destransformarse() -> void:
 	if collision:
 		collision.disabled = false
 func morir() -> void:
-	get_tree().change_scene_to_file("res://pantalla_de_perdida.tscn")
+	get_tree().change_scene_to_file("res://escenas/Hud/perdida/pantalla_de_perdida.tscn")
