@@ -1,119 +1,141 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1786920937
-alma.gd::GDScript::2266926919700773939::1786918808::0::1::::<>CharacterBody2D<><>0<>0<><>::
-alma.tscn::PackedScene::2824523221082839832::1786920852::0::1::::<><><>0<>0<><>::uid://7kd7qf21tj60::::res://alma.gd<>uid://bwcxj2lga2fhq::::res://Player/flechaPlayer.tscn<>uid://dk3h51n85ydeh::::res://el_otropersonajes.png<>uid://dqj62srr7ow1u::::res://el_otropersonajes2.png
-asd.tscn::PackedScene::566954548627319824::1786414461::0::1::::<><><>0<>0<><>::
-button.gd::GDScript::4423146781357725107::1786910298::0::1::::<>Button<><>0<>0<><>::
-City.tscn::PackedScene::1507472546607786284::1786911126::0::1::::<><><>0<>0<><>::uid://i2gfe47irk8y::::res://Player.tscn<>uid://byaqhaq0djam1::::res://Vela/Vela.tscn<>uid://t17j1fhrg3k5::::res://mapa.tscn<>uid://dxquogb7qnmfb::::res://pixil-frame-0 (3).png<>uid://dun8ow2w0y2bm::::res://spawner.tscn<>uid://d2186qs05xti0::::res://tiles/tiles.png
-CONCHARS.png::CompressedTexture2D::4619725441932694720::1786414461::1786414491::1::::<><><>0<>0<>bf30b29329d7b8b4593802abc2432a70<>res://.godot/imported/CONCHARS.png-4aa3fa07874af7a03367659afd9d5822.ctex::
-contenedor_corazones.gd::GDScript::3406351587451681866::1786492771::0::1::::<>TextureRect<><>0<>0<><>::
-corazon.png::CompressedTexture2D::982527229474729621::1786493509::1786493509::1::::<><><>0<>0<>bf9093117c7b7f77a637b7c51a0bf910<>res://.godot/imported/corazon.png-51c3639be253bed3a82d8c299884a2a8.ctex::
-Corazon.tscn::PackedScene::6173300831650801061::1786492996::0::1::::<><><>0<>0<><>::uid://n87cyngsmaif::::res://corazon.png<>uid://schmyeg88kbf::::res://texture_rect.gd<>uid://dd3k22nv2jdbm::::res://nocorazon.png
-demonio.png::CompressedTexture2D::3906242105605346644::1786920921::1786920937::1::::<><><>0<>0<>916b24df672ee40f51a0cf6eaa49ec43<>res://.godot/imported/demonio.png-e767f3513ac62b9c5384e4dd98371311.ctex::
-el_otropersonajes2.png::CompressedTexture2D::8302794364783271088::1786919142::1786919148::1::::<><><>0<>0<>e02c2ae8048286837b3c159924287d74<>res://.godot/imported/el_otropersonajes2.png-589c50980be403635bea11e85a4b7472.ctex::
-el_otropersonajes.png::CompressedTexture2D::7919433044569779995::1786904990::1786904990::1::::<><><>0<>0<>ed04a6e0e53470113cf767251f32ee65<>res://.godot/imported/el_otropersonajes.png-7396667f0725c01abd49fcafa1f4fcbc.ctex::
-enemigo1.tscn::PackedScene::4846026356980182814::1786666015::0::1::::<><><>0<>0<><>::uid://cq4ymftcqxtue::::res://Enemigo 1.gd<>uid://sbrscma24vtp::::res://golem_start.png
-Enemigo 1.gd::GDScript::5957208749896921136::1786918523::0::1::::<>CharacterBody2D<><>0<>0<><>::
-escudin.png::CompressedTexture2D::874540495824176134::1786414461::1786414491::1::::<><><>0<>0<>760a178afeb5035f660297aeff752f00<>res://.godot/imported/escudin.png-ebbfdcd4012023b77a2d2fc8cc308dbe.ctex::
-escudiyo.png::CompressedTexture2D::7994207718770420414::1786414461::1786414491::1::::<><><>0<>0<>69a7cc6c1be3b3c59283b18b564c6462<>res://.godot/imported/escudiyo.png-c5e4c2adc39a73bcbbb38a3ce7a63c2d.ctex::
-escudo.gd::GDScript::4983344882467026222::1786912029::0::1::::<>CharacterBody2D<><>0<>0<><>::
-escudo.tscn::PackedScene::8216231251994117855::1786414461::0::1::::<><><>0<>0<><>::uid://cc877yh5hvw3g::::res://escudo.gd<>uid://dl5poyy6apen3::::res://escudiyo.png<>uid://mpvs3wb0eee5::::res://escudin.png
-flecha.gd::GDScript::8516290336346774204::1786918579::0::1::::<>Area2D<><>0<>0<><>::
-flecha.tscn::PackedScene::1803831456771173001::1786918407::0::1::::<><><>0<>0<><>::uid://dtlmb7tw8xvqa::::res://flecha.gd<>uid://ckqf20vogglub::::res://fuegito.png
-fuegito.png::CompressedTexture2D::5508112995399756389::1786414461::1786414491::1::::<><><>0<>0<>bcd28bfc2762ee59d300eeb6d09586ca<>res://.godot/imported/fuegito.png-237ca4b0bea1467eee70a6c266a22e99.ctex::
-ganar.tscn::PackedScene::7340515446256957010::1786414681::0::1::::<><><>0<>0<><>::uid://dmb724fjw45gn::::res://escenas/jugar.gd<>uid://bfsah223jubcf::::res://Sprite-0003.png<>uid://c2srkbn8nb01g::::res://iralmenu.gd<>uid://boja765fr6w3h::::res://mas menu.png<>uid://cwe5xtmahilbi::::res://menu.png<>uid://btfgsnmytor2b::::res://ThaleahFat.ttf<>uid://dge2tfj45k50l::::res://ganaste.png
-ganaste.png::CompressedTexture2D::7590326190690760549::1786409539::1786414600::1::::<><><>0<>0<>f241df3ae6e475bf02a0be550d655149<>res://.godot/imported/ganaste.png-46c19db0ff32acb928696c6474270722.ctex::
-golem_start.png::CompressedTexture2D::1266528020027559809::1786414461::1786414491::1::::<><><>0<>0<>0ca781fc89629b68b488f56f8ef84bcd<>res://.godot/imported/golem_start.png-a16abc36f1712302b3ec03e924f20962.ctex::
-guardar.png::CompressedTexture2D::7695784318593526234::1786414461::1786414491::1::::<><><>0<>0<>2cd9384a92eac498ec09ef09bfe9961f<>res://.godot/imported/guardar.png-c86925763719a776365f0e8dd8d39954.ctex::
-hormiga.tscn::PackedScene::1845629620423965262::1786919338::0::1::::<><><>0<>0<><>::uid://dbjxc8p7egb4a::::res://hormigilla.gd<>uid://o7rs207rbkkx::::res://pixil-frame-0 (7).png<>uid://c62raaop7ct0n::::res://pixil-frame-0 (6).png<>uid://qhmmy8r1w3b::::res://pixil-frame-0 (8).png<>uid://cno5vrpbwrpe4::::res://pixil-frame-0 (9).png<>uid://8vd5b4c1tx0e::::res://pixil-frame-0 (10).png<>uid://dj66eie8vi7yf::::res://pixil-frame-0 (11).png<>uid://4tjunjb0k1ul::::res://pixil-frame-0 (12).png
-hormigilla.gd::GDScript::7249432114827449870::1786912029::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://::1787367053
 icon.svg::CompressedTexture2D::6369439271467890276::1786414461::1786414491::1::::<><><>0<>0<>63585541946b7a5862f70fd14cf03499<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-iralmenu.gd::GDScript::6706149066124849302::1786666397::0::1::::<>Button<><>0<>0<><>::
-jefe_final.tscn::PackedScene::735600671614974383::1786761289::0::1::::<><><>0<>0<><>::uid://bjgi2macgiqrh::::res://Vela/Vela.png
-ladrillo.tscn::PackedScene::4841333715300208947::1786415776::0::1::::<><><>0<>0<><>::uid://bjp5fpp3wlu0r::::res://Vela/pixil-frame-0.png
+::res://Assets/::1787366522
+::res://Assets/sonidos/::1787366249
+el_otropersonajes.png::CompressedTexture2D::8492693165896103571::1786904807::1787366249::1::::<><><>0<>0<>a3d1f19bd9939d386a39abb4d3dad4f7<>res://.godot/imported/el_otropersonajes.png-3db3ba84c50fe040ebb830fd7ed3f151.ctex::
+Explosion.wav::AudioStreamWAV::4394330346810823099::1786661808::1787366249::1::::<><><>0<>0<>f00ce72455c4e63063498295e468e132<>res://.godot/imported/Explosion.wav-7b7b68a3cb062441218fb59fdcb3de08.sample::
+Has_muerto.wav::AudioStreamWAV::3422228299902597178::1786662084::1787366249::1::::<><><>0<>0<>a45f3a78344620c5cd29760030df1d31<>res://.godot/imported/Has_muerto.wav-010437b340430ceca7c130dbd93c0703.sample::
+hit_enemigos.wav::AudioStreamWAV::8855822666633496976::1786661774::1787366249::1::::<><><>0<>0<>48e2958de9313d693c08965fac19e40b<>res://.godot/imported/hit_enemigos.wav-40acd51fd851ab8b840de182c6e3268b.sample::
+hit_jugador.wav::AudioStreamWAV::4550838807081025112::1786661980::1787366249::1::::<><><>0<>0<>d80a329eb93a3b45b8a549d2d9abb9f9<>res://.godot/imported/hit_jugador.wav-65d07e32f1712b1c07d7e17857d21666.sample::
+Laser_shoot 2.wav::AudioStreamWAV::8959611451064346486::1786661913::1787366249::1::::<><><>0<>0<>90357de00d7d25fc847cc190398a32cf<>res://.godot/imported/Laser_shoot 2.wav-80200a50ac399a16b58a44a678441c9c.sample::
+mejora.wav::AudioStreamWAV::6358268108692461900::1786661936::1787366249::1::::<><><>0<>0<>218dd67777292e21642685731cc90e38<>res://.godot/imported/mejora.wav-9643d52c00c494d6b11dc3176b338658.sample::
+Random 3.wav::AudioStreamWAV::1457184519242302815::1786661957::1787366249::1::::<><><>0<>0<>a87b0c1389783743af061f28ff5983fe<>res://.godot/imported/Random 3.wav-c22a03c40b459a37b1c282060d7e6b42.sample::
+Seleccion.wav::AudioStreamWAV::6167846932768929464::1786661793::1787366249::1::::<><><>0<>0<>943cda2a8f16738af21973735d172afb<>res://.godot/imported/Seleccion.wav-e9ccab5f1fbe4590e2861a075cb16b2c.sample::
+::res://Assets/tiles/::1787366522
+tiles.png::CompressedTexture2D::9110094540641060525::1786414461::1787366522::1::::<><><>0<>0<>aa37292dbd0b20aec9b71e2e2a132f84<>res://.godot/imported/tiles.png-59bbddeac388e18d39eea8041947fc8b.ctex::
+::res://Assets/Tipografias/::1787366530
+ThaleahFat.ttf::FontFile::3730727750290518395::1786414461::1787366530::1::::<><><>0<>0<>08cd8f0a84d5e98c4034bc08aee00af7<>res://.godot/imported/ThaleahFat.ttf-ff59da08d3dd615544634776439a6073.fontdata::
+::res://Enemigos/::1787366033
+::res://Enemigos/Jefes/::1787366599
+jefe_final.tscn::PackedScene::735600671614974383::1787366599::0::1::::<><><>0<>0<><>::uid://bjgi2macgiqrh::::res://Objetos/Vela/Vela.png
+::res://Enemigos/Minions/::1787366027
+::res://Enemigos/Minions/Demonios/::1787366027
+demonio.png::CompressedTexture2D::3906242105605346644::1786920921::1787366027::1::::<><><>0<>0<>3e04a75655830b681a84c1b52acc38c9<>res://.godot/imported/demonio.png-c2722f9cbc0cc8b74e6b067bc61ab84f.ctex::
+::res://Enemigos/Minions/Demonios/Gato_demonio/::1787366027
+gato_demonio.gd::GDScript::6375645913116495222::1786924647::0::1::::<>CharacterBody2D<><>0<>0<><>::
+gato_demonio.tscn::PackedScene::38419024709262191::1787366027::0::1::::<><><>0<>0<><>::uid://cw3n7r67v281w::::res://Enemigos/Minions/Demonios/Gato_demonio/gato_demonio.gd<>uid://bvwhibyasx2tk::::res://Enemigos/Minions/Demonios/demonio.png
+::res://Enemigos/Minions/Demonios/Lloron/::1787366120
+lloron.gd::GDScript::5354120685329379719::1786922753::0::1::::<>CharacterBody2D<><>0<>0<><>::
+lloron.tscn::PackedScene::1693005178809337587::1787366120::0::1::::<><><>0<>0<><>::uid://cijtt51fj0qj4::::res://lloron.gd<>uid://bvwhibyasx2tk::::res://Enemigos/Minions/Demonios/demonio.png<>uid://ckru08qn7pwrc::::res://Enemigos/Minions/Flechas/fuego_azul.tscn
+::res://Enemigos/Minions/Demonios/Sonrisa/::1787366027
+el_risas.gd::GDScript::4385639234159660796::1786922082::0::1::::<>CharacterBody2D<><>0<>0<><>::
+el_risas.tscn::PackedScene::3596396617246791903::1787366027::0::1::::<><><>0<>0<><>::uid://b3qo3qcu2p8ro::::res://Enemigos/Minions/Demonios/Sonrisa/el_risas.gd<>uid://bvwhibyasx2tk::::res://Enemigos/Minions/Demonios/demonio.png
+::res://Enemigos/Minions/Escudo/::1787366027
+Aura.png::CompressedTexture2D::7994207718770420414::1786414461::1787366027::1::::<><><>0<>0<>37ee2b2f143e9c408d46ab0128db3803<>res://.godot/imported/Aura.png-ef57c9d676d3e52c12956cb5f4cca781.ctex::
+escudin.png::CompressedTexture2D::874540495824176134::1786414461::1787366027::1::::<><><>0<>0<>53cea868027db87553b0628604c6857f<>res://.godot/imported/escudin.png-dd4e95c76605d0d2826242726d14a6e3.ctex::
+escudo.gd::GDScript::4983344882467026222::1786912029::0::1::::<>CharacterBody2D<><>0<>0<><>::
+escudo.tscn::PackedScene::8216231251994117855::1787366027::0::1::::<><><>0<>0<><>::uid://cc877yh5hvw3g::::res://Enemigos/Minions/Escudo/escudo.gd<>uid://dl5poyy6apen3::::res://Enemigos/Minions/Escudo/Aura.png<>uid://mpvs3wb0eee5::::res://Enemigos/Minions/Escudo/escudin.png
+::res://Enemigos/Minions/Flechas/::1787366027
+flecha.gd::GDScript::8516290336346774204::1786918579::0::1::::<>Area2D<><>0<>0<><>::
+flecha.tscn::PackedScene::1803831456771173001::1787366027::0::1::::<><><>0<>0<><>::uid://dtlmb7tw8xvqa::::res://Enemigos/Minions/Flechas/flecha.gd<>uid://ckqf20vogglub::::res://Enemigos/Minions/Flechas/fuegito.png
+fuegito.png::CompressedTexture2D::5508112995399756389::1786414461::1787366027::1::::<><><>0<>0<>21ce1afe4450a05f2ce482d3150cd756<>res://.godot/imported/fuegito.png-2c28d5351af65aeea3f418da7dee81e4.ctex::
+fuego_azul.gd::GDScript::2026204618176670019::1786922851::0::1::::<>Area2D<><>0<>0<><>::
+fuego_azul.tscn::PackedScene::5511084968909958068::1787366027::0::1::::<><><>0<>0<><>::uid://34rj85r1asyl::::res://Enemigos/Minions/Flechas/fuego_azul.gd<>uid://bvwhibyasx2tk::::res://Enemigos/Minions/Demonios/demonio.png
+::res://Enemigos/Minions/Golem/::1787366077
+enemigo1.tscn::PackedScene::4846026356980182814::1787366077::0::1::::<><><>0<>0<><>::uid://cq4ymftcqxtue::::res://Enemigos/Minions/Golem/Enemigo 1.gd<>uid://sbrscma24vtp::::res://Enemigos/Minions/Golem/golem_start.png
+Enemigo 1.gd::GDScript::5957208749896921136::1786924661::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Golem.tscn::PackedScene::6651582609685604006::1787366077::0::1::::<><><>0<>0<><>::uid://cq4ymftcqxtue::::res://Enemigos/Minions/Golem/Enemigo 1.gd<>uid://sbrscma24vtp::::res://Enemigos/Minions/Golem/golem_start.png
+golem_start.png::CompressedTexture2D::1266528020027559809::1786414461::1787366077::1::::<><><>0<>0<>8ee04ed85e8fdbf994270904593d04ca<>res://.godot/imported/golem_start.png-1196945f67cb382cf994f40c2076a1bb.ctex::
+::res://Enemigos/Minions/Hormiguilla/::1787366437
+Explo1.png::CompressedTexture2D::33477161419823121::1786414461::1787366430::1::::<><><>0<>0<>e7e839f80e2d3944ebbae2990e250416<>res://.godot/imported/Explo1.png-4a73dfc3bee8cb3f96edbc58da1abbda.ctex::
+Explo2.png::CompressedTexture2D::5716057550836995881::1786414461::1787366430::1::::<><><>0<>0<>0704b702e128aa280342ebb37ca7d591<>res://.godot/imported/Explo2.png-173c14bab0f02b55122e5dce3c3dc2d0.ctex::
+Explo3.png::CompressedTexture2D::2359819595134838250::1786414461::1787366430::1::::<><><>0<>0<>950af51575cfaac503832c8230c7dd5f<>res://.godot/imported/Explo3.png-72fefc383140c75f17d14cdc14538ec7.ctex::
+Explo4.png::CompressedTexture2D::7856847152042630757::1786414461::1787366430::1::::<><><>0<>0<>c04e40592e13eb6c9cde115750c187a8<>res://.godot/imported/Explo4.png-21b0985a4b3f8cb64fee118fd75a8ac6.ctex::
+Explo5.png::CompressedTexture2D::2075282508429130203::1786414461::1787366430::1::::<><><>0<>0<>5e7bed3e92c7e88b5cacaea245c9dd56<>res://.godot/imported/Explo5.png-f1e0a045698f742ecfd18e02170d7bf4.ctex::
+Hormiga1.png::CompressedTexture2D::7005465930753507227::1786414461::1787366437::1::::<><><>0<>0<>969015b9ec1361c7b635288a4e24f472<>res://.godot/imported/Hormiga1.png-a592d138cc529c031aff74618e564174.ctex::
+Hormiga2.png::CompressedTexture2D::1049769690456951019::1786414461::1787366437::1::::<><><>0<>0<>382b1b80ffd0b1fdf8fd8339617761b6<>res://.godot/imported/Hormiga2.png-66c7bd593eb2c8f4d52591dfdb6ebeac.ctex::
+hormiga.tscn::PackedScene::1845629620423965262::1787366437::0::1::::<><><>0<>0<><>::uid://dbjxc8p7egb4a::::res://Enemigos/Minions/Hormiguilla/hormigilla.gd<>uid://o7rs207rbkkx::::res://Enemigos/Minions/Hormiguilla/Hormiga2.png<>uid://c62raaop7ct0n::::res://Enemigos/Minions/Hormiguilla/Hormiga1.png<>uid://qhmmy8r1w3b::::res://Enemigos/Minions/Hormiguilla/Explo1.png<>uid://cno5vrpbwrpe4::::res://Enemigos/Minions/Hormiguilla/Explo2.png<>uid://8vd5b4c1tx0e::::res://Enemigos/Minions/Hormiguilla/Explo3.png<>uid://dj66eie8vi7yf::::res://Enemigos/Minions/Hormiguilla/Explo4.png<>uid://4tjunjb0k1ul::::res://Enemigos/Minions/Hormiguilla/Explo5.png
+hormigilla.gd::GDScript::7249432114827449870::1786912029::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Enemigos/Minions/Mago/::1787366130
 mago.gd::GDScript::4494241111337817346::1786912029::0::1::::<>CharacterBody2D<><>0<>0<><>::
-mago.png::CompressedTexture2D::354939171068627137::1786414461::1786414491::1::::<><><>0<>0<>75d7b7904052632bb7985074eb899ff9<>res://.godot/imported/mago.png-96475446a49d23679b4ed6ba65ca97fa.ctex::
-mago.tscn::PackedScene::5760795176995091046::1786414461::0::1::::<><><>0<>0<><>::uid://b5bbq2vkvrhao::::res://mago.gd<>uid://0x13tw8fihjl::::res://flecha.tscn<>uid://fb62crnkux3n::::res://mago.png
-mapa.tscn::PackedScene::1389222240314000450::1786414461::0::1::::<><><>0<>0<><>::uid://ca8gcafq06ivb::::res://ladrillo.tscn
-mas menu.png::CompressedTexture2D::3387702714636175679::1786414461::1786414491::1::::<><><>0<>0<>4077b40b2fb98a0b13ec529d5c67904a<>res://.godot/imported/mas menu.png-347fb2d9424a3d4d08cdba20481b304d.ctex::
-menu.png::CompressedTexture2D::6327117037972947462::1786395408::1786414600::1::::<><><>0<>0<>2ecbe5a4050a34433ea8c0a8da5b5372<>res://.godot/imported/menu.png-031e8248bd806b7df772ee8ccc4b4c5e.ctex::
-nocorazon.png::CompressedTexture2D::7428287984673664402::1786493509::1786493509::1::::<><><>0<>0<>6fd8cc4a0bd6f4ccd15cf44d4ae57f9e<>res://.godot/imported/nocorazon.png-b40215fb1f854e46174fd1dba0392825.ctex::
-node_2d.tscn::PackedScene::6292122647222569563::1786742068::0::1::::<><><>0<>0<><>::uid://1kbirh2j4lpm::::res://hormiga.tscn<>uid://coctpp4qpo7nm::::res://mago.tscn<>uid://i2gfe47irk8y::::res://Player.tscn<>uid://dpcaemlisab1h::::res://escudo.tscn<>uid://cbbpl1ctnca75::::res://enemigo1.tscn<>uid://kqlialt6mdul::::res://jefe_final.tscn
-pantalla_de_carga.tscn::PackedScene::6039871980162753638::1786666426::0::1::::<><><>0<>0<><>::uid://b4aut062q87h4::::res://button.gd<>uid://bfsah223jubcf::::res://Sprite-0003.png<>uid://g72kwak6puxk::::res://salir.gd<>uid://boja765fr6w3h::::res://mas menu.png<>uid://btfgsnmytor2b::::res://ThaleahFat.ttf<>uid://cisxtokl5dvin::::res://Player/WhatsApp Image 2026-08-09 at 7.15.49 PM.jpeg
-pantalla_de_perdida.gd::GDScript::623173318718095180::1786666508::0::1::::<>Node2D<><>0<>0<><>::
-pantalla_de_perdida.tscn::PackedScene::2190414151786794441::1786666508::0::1::::<><><>0<>0<><>::uid://i44tq8lo1l7q::::res://pantalla_de_perdida.gd<>uid://b4aut062q87h4::::res://button.gd<>uid://bfsah223jubcf::::res://Sprite-0003.png<>uid://c2srkbn8nb01g::::res://iralmenu.gd<>uid://boja765fr6w3h::::res://mas menu.png<>uid://btfgsnmytor2b::::res://ThaleahFat.ttf<>uid://cwe5xtmahilbi::::res://menu.png<>uid://c41smjr6x4ixn::::res://pixil-frame-0.png
-pixil-frame-0 (2).png::CompressedTexture2D::4586075859525951720::1786414461::1786414491::1::::<><><>0<>0<>fd3e26dce52a8931b9b4e468ecd2dfad<>res://.godot/imported/pixil-frame-0 (2).png-3518ea07d4b7b07323f6a64175fb6f0f.ctex::
-pixil-frame-0 (3).png::CompressedTexture2D::8807875157949747459::1786414461::1786414491::1::::<><><>0<>0<>dd5533a4cb6cc3043e154559c9b73c2f<>res://.godot/imported/pixil-frame-0 (3).png-1f44af19afde9a7a24ec4c7b5832abba.ctex::
-pixil-frame-0 (4).png::CompressedTexture2D::9150560584649547814::1786414461::1786414491::1::::<><><>0<>0<>ba992b13b679e1f65311f8d8b4fca629<>res://.godot/imported/pixil-frame-0 (4).png-bba574f4ee8b3d6f35413ea708a3e78b.ctex::
-pixil-frame-0 (5).png::CompressedTexture2D::882949988270320487::1786414461::1786414491::1::::<><><>0<>0<>9702585153cc37c222cb6051f793758d<>res://.godot/imported/pixil-frame-0 (5).png-6f158f690247b5872255cf2d0ec437a7.ctex::
-pixil-frame-0 (6).png::CompressedTexture2D::7005465930753507227::1786414461::1786414491::1::::<><><>0<>0<>6701db2eace38a64834d0c6fb1a5c01a<>res://.godot/imported/pixil-frame-0 (6).png-deb9d054cecd76db0bbea3b9e0c6eb7f.ctex::
-pixil-frame-0 (7).png::CompressedTexture2D::1049769690456951019::1786414461::1786414491::1::::<><><>0<>0<>ecee65d4fe875e96aa56a99e5736c99e<>res://.godot/imported/pixil-frame-0 (7).png-dccde4ae611529bdc76732aea4e89eaa.ctex::
-pixil-frame-0 (8).png::CompressedTexture2D::33477161419823121::1786414461::1786414491::1::::<><><>0<>0<>a188f6ffea855d5077e7f570cdf6ef35<>res://.godot/imported/pixil-frame-0 (8).png-96a1cffb44203ebe22085a068390c1fd.ctex::
-pixil-frame-0 (9).png::CompressedTexture2D::5716057550836995881::1786414461::1786414491::1::::<><><>0<>0<>43f1b1f5db82bdf129643e3f82665ca0<>res://.godot/imported/pixil-frame-0 (9).png-5fed6ba5a9cd631bbe8044fe63e7d59f.ctex::
-pixil-frame-0 (10).png::CompressedTexture2D::2359819595134838250::1786414461::1786414491::1::::<><><>0<>0<>ee673381b9b01145fb0288abf39191ea<>res://.godot/imported/pixil-frame-0 (10).png-748c065bc70ac80cd849eb0dd3402d45.ctex::
-pixil-frame-0 (11).png::CompressedTexture2D::7856847152042630757::1786414461::1786414491::1::::<><><>0<>0<>4f151e73df487db1f7a5234148adb3c1<>res://.godot/imported/pixil-frame-0 (11).png-dbe2dce219c03a2de3b40d0dd92692d4.ctex::
-pixil-frame-0 (12).png::CompressedTexture2D::2075282508429130203::1786414461::1786414491::1::::<><><>0<>0<>2ff30102537626a8538ecedd94864281<>res://.godot/imported/pixil-frame-0 (12).png-1c4fa02724a0b2c8b28b0d9e34911358.ctex::
-pixil-frame-0 (13).png::CompressedTexture2D::4105851954024873807::1786414461::1786414491::1::::<><><>0<>0<>66a0aef028ca7c8328fdbc1b5077b4e9<>res://.godot/imported/pixil-frame-0 (13).png-217b51358287980abb0f47e2466c5391.ctex::
-pixil-frame-0.png::CompressedTexture2D::6863106490303560627::1786395408::1786414600::1::::<><><>0<>0<>c16901f1f33d1a7bed444a44a70a3277<>res://.godot/imported/pixil-frame-0.png-ad73aed19b00fd55eeaf2db0cae8f8ff.ctex::
-Player.tscn::PackedScene::617622435748030058::1786906985::0::1::::<><><>0<>0<><>::uid://il650jo3m4u4::::res://Player/Jugador.gd<>uid://lhpo51qsn6by::::res://Player/portavelas_walk.png<>uid://ct7nmlmgjcv4x::::res://Corazon.tscn<>uid://6i2m5lk7dvxo::::res://Player/portavelas_attack1.png<>uid://bp71wfk82vyve::::res://Player/portavelas_idle.png<>uid://bgihqqn6jqhy3::::res://alma.tscn<>uid://dnbgl5fb6lxro::::res://shift.png<>uid://dhv5pcr1xs4sc::::res://guardar.png<>uid://btfgsnmytor2b::::res://ThaleahFat.ttf
-portal.gd::GDScript::2581998330957694697::1786662472::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
-portal.png::CompressedTexture2D::3087849788880074363::1786499769::1786499770::1::::<><><>0<>0<>81223cfea2578ace1b23e97c970fe3ac<>res://.godot/imported/portal.png-cac28fad10330d5df5782c260ec8497f.ctex::
-pruebas.tscn::PackedScene::5884822749893349888::1786906640::0::1::::<><><>0<>0<><>::uid://ca8gcafq06ivb::::res://ladrillo.tscn<>uid://bgihqqn6jqhy3::::res://alma.tscn<>uid://c11cugnwonpis::::res://escenas/enemigo1.tscn
-puntaje.gd::GDScript::527685530398002752::1786500246::0::1::::<>RefCounted<><>0<>0<><>::
-rotar.png::CompressedTexture2D::991253955637380019::1786414461::1786414491::1::::<><><>0<>0<>81b7f2ea70783dae4401863a2cc5d1ec<>res://.godot/imported/rotar.png-20d2501a3253ada06d0432a6b8fa65f4.ctex::
+mago.png::CompressedTexture2D::354939171068627137::1786414461::1787366130::1::::<><><>0<>0<>ebe252feaf526e0d07efe83c7398d4ba<>res://.godot/imported/mago.png-9ab013ddd19982aa73ed7eebc1d17a8e.ctex::
+mago.tscn::PackedScene::5760795176995091046::1787366130::0::1::::<><><>0<>0<><>::uid://b5bbq2vkvrhao::::res://Enemigos/Minions/Mago/mago.gd<>uid://0x13tw8fihjl::::res://Enemigos/Minions/Flechas/flecha.tscn<>uid://fb62crnkux3n::::res://Enemigos/Minions/Mago/mago.png
+::res://escenas/::1787366691
+asd.tscn::PackedScene::8740795059834590132::1787366691::0::1::::<><><>0<>0<><>::
+ganar.tscn::PackedScene::4868084402956326449::1787366691::0::1::::<><><>0<>0<><>::uid://dmb724fjw45gn::::res://escenas/Hud/Codigos/jugar.gd<>uid://bfsah223jubcf::::res://escenas/Hud/Sprites/Botones.png<>uid://boja765fr6w3h::::res://escenas/Hud/Sprites/mas menu.png<>uid://c2srkbn8nb01g::::res://escenas/Hud/Codigos/iralmenu.gd
+spawner.tscn::PackedScene::535725378803355433::1787366691::0::1::::<><><>0<>0<><>::uid://d3x36fueui8or::::res://Sistemas/Spawner/spawner.gd<>uid://cw0ny70tcnyki::::res://icon.svg<>uid://c11cugnwonpis::::res://Enemigos/Minions/Golem/Golem.tscn<>uid://coctpp4qpo7nm::::res://Enemigos/Minions/Mago/mago.tscn<>uid://1kbirh2j4lpm::::res://Enemigos/Minions/Hormiguilla/hormiga.tscn<>uid://dpcaemlisab1h::::res://Enemigos/Minions/Escudo/escudo.tscn
+::res://escenas/Hud/::1787366311
+::res://escenas/Hud/Codigos/::1787366969
+button.gd::GDScript::4423146781357725107::1787366969::0::1::::<>Button<><>0<>0<><>::
+iralmenu.gd::GDScript::6706149066124849302::1787366969::0::1::::<>Button<><>0<>0<><>::
+jugar.gd::GDScript::8005585244034379769::1787366969::0::1::::<>Button<><>0<>0<><>::
 salir.gd::GDScript::488851522711947920::1786414461::0::1::::<>Button<><>0<>0<><>::
-shift.png::CompressedTexture2D::8074166925329184340::1786414461::1786414491::1::::<><><>0<>0<>d3977fb37f3458473a417f9f74d5e942<>res://.godot/imported/shift.png-adad6767269bd9049cc0831c1607ad4a.ctex::
-sonidos.gd::GDScript::58347224780236532::1786662750::0::1::::<>Node<><>0<>0<><>::
-spawner.gd::GDScript::9173786090417758065::1786666338::0::1::::<>Node2D<><>0<>0<><>::
-spawner.tscn::PackedScene::8591905694776074474::1786662496::0::1::::<><><>0<>0<><>::uid://d3x36fueui8or::::res://spawner.gd<>uid://cbbpl1ctnca75::::res://enemigo1.tscn<>uid://coctpp4qpo7nm::::res://mago.tscn<>uid://1kbirh2j4lpm::::res://hormiga.tscn<>uid://dpcaemlisab1h::::res://escudo.tscn<>uid://bj81o1yu7f5n8::::res://portal.png<>uid://bc10eum5pk64t::::res://portal.gd<>uid://btfgsnmytor2b::::res://ThaleahFat.ttf<>uid://xblfgowww7pc::::res://Enemigos(escenas)/mejora_score.png<>uid://w1q0caltqwhs::::res://Enemigos(escenas)/mejora_damage.png<>uid://bykjbctmj65wp::::res://Enemigos(escenas)/mejora_speed.png
-Sprite-0003.png::CompressedTexture2D::2774537663138852541::1786414461::1786414491::1::::<><><>0<>0<>269a8f5d9cbd8af529336abf7faeba37<>res://.godot/imported/Sprite-0003.png-1f8a734700fecef5758050b12f42e4d6.ctex::
-texture_rect.gd::GDScript::1267975656526567847::1786492898::0::1::::<>TextureRect<><>0<>0<><>::
-ThaleahFat.ttf::FontFile::3730727750290518395::1786414461::1786414491::1::::<><><>0<>0<>ad5e7d730c43a9ed7654a1b33965ef87<>res://.godot/imported/ThaleahFat.ttf-1521c9d514bccfd3cdf59af08590cdb4.fontdata::
-vida.png::CompressedTexture2D::7598844981161081409::1786492366::1786492366::1::::<><><>0<>0<>94f53358fe9dda45730fef8ed96fbe61<>res://.godot/imported/vida.png-feaf1b0f55595087f3d27cee84c8bfb8.ctex::
-WhatsApp Image 2026-08-07 at 1.32.50 PM.jpeg::CompressedTexture2D::7160000622561946040::1786414461::1786414491::1::::<><><>0<>0<>f265c86fb2f9b62a1e433289772261b5<>res://.godot/imported/WhatsApp Image 2026-08-07 at 1.32.50 PM.jpeg-25a3bb7ed10bb8a1d9c872bbe5dea558.ctex::
-WhatsApp Image 2026-08-08 at 6.41.19 PM.jpeg::CompressedTexture2D::4211900662968268031::1786414461::1786414491::1::::<><><>0<>0<>47d509d9dc15bbba23d192edec259e8e<>res://.godot/imported/WhatsApp Image 2026-08-08 at 6.41.19 PM.jpeg-dfc696b8843d5c4a436e0dc09f233fa9.ctex::
-::res://Enemigos(escenas)/::1786920937
-escudo.tscn::PackedScene::4692558748943322576::1786414461::0::1::::<><><>0<>0<><>::uid://b4hgxrbkxjfl4::::res://escudo.gd<>uid://dqv2vcc5wl7d3::::res://escudiyo.png<>uid://djw6rh2uxkkrd::::res://escudin.png
-flecha.tscn::PackedScene::6581461404855250678::1786414461::0::1::::<><><>0<>0<><>::uid://dtlmb7tw8xvqa::::res://flecha.gd<>uid://ckqf20vogglub::::res://fuegito.png
-hormiga.tscn::PackedScene::1190472504186216109::1786414461::0::1::::<><><>0<>0<><>::uid://b1kfwnxnmhiik::::res://hormigilla.gd<>uid://b6b8q6tjgi8e6::::res://pixil-frame-0 (7).png<>uid://bf7bdcll7qndl::::res://pixil-frame-0 (6).png<>uid://cqi770e04qig4::::res://pixil-frame-0 (8).png<>uid://n0uu8p2wmhpn::::res://pixil-frame-0 (9).png<>uid://cglo0f21bwsqo::::res://pixil-frame-0 (10).png<>uid://do531pu245vkl::::res://pixil-frame-0 (11).png<>uid://c1fnh7wss35rp::::res://pixil-frame-0 (12).png
-mago.tscn::PackedScene::5855664172399139162::1786414461::0::1::::<><><>0<>0<><>::uid://difbrhk33h76::::res://mago.gd<>uid://c01dycgmo5ynm::::res://flecha.tscn<>uid://dftqdllyd6pq::::res://mago.png
-mejora_damage.png::CompressedTexture2D::1598844603946687336::1786660488::1786660488::1::::<><><>0<>0<>17f42a92d9094f0475715dc21fd67c9f<>res://.godot/imported/mejora_damage.png-5ab582b9240820185180f4961803077f.ctex::
-mejora_score.png::CompressedTexture2D::1617084935116003792::1786660488::1786660488::1::::<><><>0<>0<>033110a076f5522c850d28220929cb8f<>res://.godot/imported/mejora_score.png-95bcb38312acfa08d6c835880ee6b111.ctex::
-mejora_speed.png::CompressedTexture2D::4092145082231769275::1786660488::1786660488::1::::<><><>0<>0<>164f6b129293e05497f9cff28f565210<>res://.godot/imported/mejora_speed.png-a1b6161b2f5213d3cf6eb950bc593bea.ctex::
-::res://escenas/::1786741869
-asd.tscn::PackedScene::6895424529410073011::1786414461::0::1::::<><><>0<>0<><>::
-City.tscn::PackedScene::1380969642031298231::1786414461::0::1::::<><><>0<>0<><>::uid://b3w674xv0nysb::::res://Player.tscn<>uid://byaqhaq0djam1::::res://Vela/Vela.tscn<>uid://t17j1fhrg3k5::::res://mapa.tscn<>uid://dbqrw2q5wdff1::::res://pixil-frame-0 (3).png<>uid://d3i3pu8cxgsqp::::res://spawner.tscn
-enemigo1.tscn::PackedScene::6651582609685604006::1786741869::0::1::::<><><>0<>0<><>::uid://cq4ymftcqxtue::::res://Enemigo 1.gd<>uid://sbrscma24vtp::::res://golem_start.png
-ganar.tscn::PackedScene::7340515446256957010::1786414461::0::1::::<><><>0<>0<><>::uid://dmb724fjw45gn::::res://escenas/jugar.gd<>uid://bfsah223jubcf::::res://Sprite-0003.png<>uid://c2srkbn8nb01g::::res://iralmenu.gd<>uid://boja765fr6w3h::::res://mas menu.png
-jugar.gd::GDScript::8005585244034379769::1786666399::0::1::::<>Button<><>0<>0<><>::
-node_2d.tscn::PackedScene::5006128239520137986::1786571276::0::1::::<><><>0<>0<><>::uid://cpor60ag52ni5::::res://Enemigos(escenas)/mago.tscn<>uid://dpcaemlisab1h::::res://escudo.tscn<>uid://i2gfe47irk8y::::res://Player.tscn<>uid://1kbirh2j4lpm::::res://hormiga.tscn<>uid://c11cugnwonpis::::res://escenas/enemigo1.tscn
-spawner.tscn::PackedScene::9142792659250134935::1786666338::0::1::::<><><>0<>0<><>::uid://d3x36fueui8or::::res://spawner.gd<>uid://c11cugnwonpis::::res://escenas/enemigo1.tscn<>uid://cw0ny70tcnyki::::res://icon.svg<>uid://cpor60ag52ni5::::res://Enemigos(escenas)/mago.tscn<>uid://q7w545oyigav::::res://Enemigos(escenas)/hormiga.tscn<>uid://byq51t1jjad5x::::res://pixil-frame-0 (13).png<>uid://b74d00djjku7a::::res://Enemigos(escenas)/escudo.tscn
-WhatsApp Image 2026-08-09 at 7.23.55 PM (1).jpeg::CompressedTexture2D::4488253979901269328::1786414461::1786414491::1::::<><><>0<>0<>2bdf23aa232b3b7b1f5716935758e377<>res://.godot/imported/WhatsApp Image 2026-08-09 at 7.23.55 PM (1).jpeg-cc0ed53086950991dc1c4e45f6ba5bc6.ctex::
-::res://Player/::1786919147
-flechaPlayer.tscn::PackedScene::3936117997613688042::1786902611::0::1::::<><><>0<>0<><>::uid://d0okit4qo0chx::::res://Player/flecha_player.gd<>uid://ckqf20vogglub::::res://fuegito.png
+::res://escenas/Hud/Ganar/::1787366574
+ganar.tscn::PackedScene::7340515446256957010::1787366574::0::1::::<><><>0<>0<><>::uid://dmb724fjw45gn::::res://escenas/Hud/Codigos/jugar.gd<>uid://bfsah223jubcf::::res://escenas/Hud/Sprites/Botones.png<>uid://boja765fr6w3h::::res://escenas/Hud/Sprites/mas menu.png<>uid://c2srkbn8nb01g::::res://escenas/Hud/Codigos/iralmenu.gd<>uid://cwe5xtmahilbi::::res://escenas/Hud/Sprites/menu.png<>uid://btfgsnmytor2b::::res://Assets/Tipografias/ThaleahFat.ttf<>uid://dge2tfj45k50l::::res://escenas/Hud/Ganar/ganaste.png
+ganaste.png::CompressedTexture2D::7590326190690760549::1786409539::1787366327::1::::<><><>0<>0<>455da6c9eab5f48c12d1c2964e50fae8<>res://.godot/imported/ganaste.png-8f7f904150ec23b32d935743227e9e62.ctex::
+::res://escenas/Hud/inicio/::1787366674
+Fondo_menu.jpeg::CompressedTexture2D::5372942088296327241::1786414461::1787366478::1::::<><><>0<>0<>19b348f11b586bb6dc4e9dec324802ad<>res://.godot/imported/Fondo_menu.jpeg-85ad8bf9700e1cd4b434798abc7fa57d.ctex::
+pantalla_de_inicio.tscn::PackedScene::6039871980162753638::1787366674::0::1::::<><><>0<>0<><>::uid://b4aut062q87h4::::res://escenas/Hud/Codigos/button.gd<>uid://bfsah223jubcf::::res://escenas/Hud/Sprites/Botones.png<>uid://boja765fr6w3h::::res://escenas/Hud/Sprites/mas menu.png<>uid://g72kwak6puxk::::res://escenas/Hud/Codigos/salir.gd<>uid://btfgsnmytor2b::::res://Assets/Tipografias/ThaleahFat.ttf<>uid://cisxtokl5dvin::::res://escenas/Hud/inicio/Fondo_menu.jpeg
+::res://escenas/Hud/perdida/::1787366574
+pantalla_de_perdida.gd::GDScript::623173318718095180::1786666508::0::1::::<>Node2D<><>0<>0<><>::
+pantalla_de_perdida.tscn::PackedScene::2190414151786794441::1787366574::0::1::::<><><>0<>0<><>::uid://i44tq8lo1l7q::::res://escenas/Hud/perdida/pantalla_de_perdida.gd<>uid://b4aut062q87h4::::res://escenas/Hud/Codigos/button.gd<>uid://bfsah223jubcf::::res://escenas/Hud/Sprites/Botones.png<>uid://c2srkbn8nb01g::::res://escenas/Hud/Codigos/iralmenu.gd<>uid://boja765fr6w3h::::res://escenas/Hud/Sprites/mas menu.png<>uid://btfgsnmytor2b::::res://Assets/Tipografias/ThaleahFat.ttf<>uid://cwe5xtmahilbi::::res://escenas/Hud/Sprites/menu.png<>uid://c41smjr6x4ixn::::res://escenas/Hud/perdida/Perdida.png
+Perdida.png::CompressedTexture2D::6863106490303560627::1786395408::1787366469::1::::<><><>0<>0<>7fe9871b680ec160f96e4e3106f5909f<>res://.godot/imported/Perdida.png-e17ca58619f1ff7275932b933e17aab8.ctex::
+::res://escenas/Hud/Sprites/::1787366574
+Botones.png::CompressedTexture2D::2774537663138852541::1786414461::1787366574::1::::<><><>0<>0<>a49b95232bcba501cd5c4fc58bddf900<>res://.godot/imported/Botones.png-bf7a04fb045c792e9f922086b4d19af7.ctex::
+Fondo2.png::CompressedTexture2D::8807875157949747459::1786414461::1787366363::1::::<><><>0<>0<>6320afb837c5246fdf45ea76da0359cd<>res://.godot/imported/Fondo2.png-98adf5da0c0832237a98e54bc58f3e66.ctex::
+Fondo.png::CompressedTexture2D::4586075859525951720::1786414461::1787366363::1::::<><><>0<>0<>d2c97044acea024e074f234e4badb12c<>res://.godot/imported/Fondo.png-35989502c57166643152b9338f863707.ctex::
+mas menu.png::CompressedTexture2D::3387702714636175679::1786414461::1787366327::1::::<><><>0<>0<>19edfbc068cf15487a4d6ff3924ff3d3<>res://.godot/imported/mas menu.png-33ad00299b203590554ce591923ef5e2.ctex::
+menu.png::CompressedTexture2D::6327117037972947462::1786395408::1787366327::1::::<><><>0<>0<>2f2d0d92e58fed627c778620fce0401c<>res://.godot/imported/menu.png-eb75d0f20b414eb0a091d4e450806679.ctex::
+::res://escenas/Prueba/::1787366614
+asd.tscn::PackedScene::566954548627319824::1786414461::0::1::::<><><>0<>0<><>::
+node_2d.tscn::PackedScene::5006128239520137986::1787366500::0::1::::<><><>0<>0<><>::uid://c11cugnwonpis::::res://Enemigos/Minions/Golem/Golem.tscn<>uid://coctpp4qpo7nm::::res://Enemigos/Minions/Mago/mago.tscn<>uid://dpcaemlisab1h::::res://Enemigos/Minions/Escudo/escudo.tscn<>uid://1kbirh2j4lpm::::res://Enemigos/Minions/Hormiguilla/hormiga.tscn<>uid://i2gfe47irk8y::::res://Player/Cuerpo/Player.tscn
+pruebas.tscn::PackedScene::5884822749893349888::1787366500::0::1::::<><><>0<>0<><>::uid://ca8gcafq06ivb::::res://Objetos/ladrillo.tscn<>uid://i2gfe47irk8y::::res://Player/Cuerpo/Player.tscn<>uid://yedsvonct8xj::::res://Enemigos/Minions/Demonios/Lloron/lloron.tscn
+::res://Objetos/::1787366599
+ladrillo.tscn::PackedScene::4841333715300208947::1787366599::0::1::::<><><>0<>0<><>::uid://bjp5fpp3wlu0r::::res://Objetos/Vela/Ladrillo.png
+mapa.tscn::PackedScene::1389222240314000450::1787366105::0::1::::<><><>0<>0<><>::uid://ca8gcafq06ivb::::res://Objetos/ladrillo.tscn
+::res://Objetos/Vela/::1787366599
+Ladrillo.png::CompressedTexture2D::3050917193823173547::1786414461::1787366599::1::::<><><>0<>0<>e69f31f146bd286db63029315277a489<>res://.godot/imported/Ladrillo.png-af47adcaaed12c76d66e6c96f8d45934.ctex::
+Vela3.png::CompressedTexture2D::5111113424586995756::1786414461::1787366599::1::::<><><>0<>0<>e096177d99e97f5259d790b4006e102b<>res://.godot/imported/Vela3.png-7a9a02737e5e2441bd521e26fb88c637.ctex::
+vela 2.png::CompressedTexture2D::7177791915072710649::1786414461::1787366599::1::::<><><>0<>0<>945c28e777b43ce19c1127f69d3bffe2<>res://.godot/imported/vela 2.png-85ab50135b97d1f61aca429ea68274fc.ctex::
+Vela.gd::GDScript::4509445582018708300::1786414461::0::1::::<>StaticBody2D<><>0<>0<><>::
+Vela.png::CompressedTexture2D::3031041125716739177::1786414461::1787366599::1::::<><><>0<>0<>1f40df1267acafa540cc67a13d2d351b<>res://.godot/imported/Vela.png-f80cb462b3881cf6775d7ea760a27dee.ctex::
+Vela.tscn::PackedScene::4071936929304595402::1787366599::0::1::::<><><>0<>0<><>::uid://b5in563u6ntua::::res://Objetos/Vela/Vela.gd<>uid://dai8gi466d5gn::::res://Objetos/Vela/vela 2.png<>uid://ce24j52u1abu7::::res://Objetos/Vela/Vela3.png<>uid://bjgi2macgiqrh::::res://Objetos/Vela/Vela.png
+::res://Player/::1787366691
+Player.tscn::PackedScene::2288433811114893668::1787366691::0::1::::<><><>0<>0<><>::uid://il650jo3m4u4::::res://Player/Codigos/Jugador.gd<>uid://lhpo51qsn6by::::res://Player/Sprites/portavelas_walk.png<>uid://6i2m5lk7dvxo::::res://Player/Sprites/portavelas_attack1.png<>uid://bp71wfk82vyve::::res://Player/Sprites/portavelas_idle.png
+::res://Player/Alma/::1787365632
+alma.tscn::PackedScene::2824523221082839832::1787365632::0::1::::<><><>0<>0<><>::uid://7kd7qf21tj60::::res://Player/Codigos/alma.gd<>uid://bwcxj2lga2fhq::::res://Player/Cuerpo/flechaPlayer.tscn<>uid://dk3h51n85ydeh::::res://Player/Sprites/Alma.png<>uid://dqj62srr7ow1u::::res://Player/Sprites/Alma2.png
+::res://Player/Codigos/::1787366623
+alma.gd::GDScript::2266926919700773939::1786918808::0::1::::<>CharacterBody2D<><>0<>0<><>::
+contenedor_corazones.gd::GDScript::3406351587451681866::1786492771::0::1::::<>TextureRect<><>0<>0<><>::
+Corazones.gd::GDScript::1267975656526567847::1786492898::0::1::::<>TextureRect<><>0<>0<><>::
 flecha_player.gd::GDScript::8943506930355494901::1786918315::0::1::::<>Area2D<><>0<>0<><>::
 Jugador.gd::GDScript::586156032652836441::1786911494::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Player.tscn::PackedScene::4399065548023787293::1786901712::0::1::::<><><>0<>0<><>::uid://il650jo3m4u4::::res://Player/Jugador.gd<>uid://bwcxj2lga2fhq::::res://Player/flechaPlayer.tscn<>uid://lhpo51qsn6by::::res://Player/portavelas_walk.png<>uid://6i2m5lk7dvxo::::res://Player/portavelas_attack1.png<>uid://bp71wfk82vyve::::res://Player/portavelas_idle.png<>uid://oef2p31cqvlj::::res://rotar.png
-portavelas_attack1.png::CompressedTexture2D::2194031556333648264::1786414461::1786414491::1::::<><><>0<>0<>8909480dbba68e6f6aba5e71a8764176<>res://.godot/imported/portavelas_attack1.png-940b677d139ab3b8f341fd93294ce702.ctex::
-portavelas_idle.png::CompressedTexture2D::3506931635272434214::1786414461::1786414491::1::::<><><>0<>0<>260612fa7a0f90cfffa373d91723bfe7<>res://.godot/imported/portavelas_idle.png-c427030628c3625ad903b07be31ac319.ctex::
-portavelas_walk.png::CompressedTexture2D::787465296919926974::1786414461::1786414491::1::::<><><>0<>0<>b2795b11bdab3e1ca36d146efffcc9b7<>res://.godot/imported/portavelas_walk.png-e4cc14d8886f8094e0327a1c7cc82d4d.ctex::
-WhatsApp Image 2026-08-09 at 7.15.49 PM.jpeg::CompressedTexture2D::5372942088296327241::1786414461::1786414491::1::::<><><>0<>0<>20d1b5524656bd6d491e3ae58c0d05e2<>res://.godot/imported/WhatsApp Image 2026-08-09 at 7.15.49 PM.jpeg-1f423679f598e70b30cb31448a2200d1.ctex::
-::res://sonidos/::1786904807
-el_otropersonajes.png::CompressedTexture2D::8492693165896103571::1786904807::1786904807::1::::<><><>0<>0<>75d0ab0358572233d8f052cc718a9e55<>res://.godot/imported/el_otropersonajes.png-cd8a2fff0883f172828d13d100c811d4.ctex::
-Explosion.wav::AudioStreamWAV::4394330346810823099::1786661808::1786662004::1::::<><><>0<>0<>55a575dd243a8b11662bda346ff13dea<>res://.godot/imported/Explosion.wav-9f5cbf9f0669818c848b2162441dc71e.sample::
-Has_muerto.wav::AudioStreamWAV::3422228299902597178::1786662084::1786662097::1::::<><><>0<>0<>6cc315063726909c59d5123f1217dacc<>res://.godot/imported/Has_muerto.wav-21239432c7194be6f28fda6b984de59f.sample::
-hit_enemigos.wav::AudioStreamWAV::8855822666633496976::1786661774::1786661992::1::::<><><>0<>0<>609ded60f754c45719d0b961310f4da2<>res://.godot/imported/hit_enemigos.wav-58be4f0b9e751270d333859dbb2f13cc.sample::
-hit_jugador.wav::AudioStreamWAV::4550838807081025112::1786661980::1786661997::1::::<><><>0<>0<>1e6cec90b093ebe30261651d898cea14<>res://.godot/imported/hit_jugador.wav-d05ed3c97f6eebc68b17feef2234ce86.sample::
-Laser_shoot 2.wav::AudioStreamWAV::8959611451064346486::1786661913::1786661913::1::::<><><>0<>0<>68eca1abe4feca0acb5195dd3e03fcbc<>res://.godot/imported/Laser_shoot 2.wav-661f5432f3cd4025640bcfea72eaa6b2.sample::
-mejora.wav::AudioStreamWAV::6358268108692461900::1786661936::1786662042::1::::<><><>0<>0<>fc66914925d995ad750f3ca170a0d781<>res://.godot/imported/mejora.wav-31a22d7316b51ca4dabf7ecd9c4e8e58.sample::
-Random 3.wav::AudioStreamWAV::1457184519242302815::1786661957::1786661957::1::::<><><>0<>0<>e663eba8ffda63cf21f671d00919c335<>res://.godot/imported/Random 3.wav-6bc67e43e27810b93014241356dd0f84.sample::
-Seleccion.wav::AudioStreamWAV::6167846932768929464::1786661793::1786662011::1::::<><><>0<>0<>396d5a40d5dad44f0f78e4b4caa5a461<>res://.godot/imported/Seleccion.wav-3c60d2c220b70909bed8f47190f1e41c.sample::
-::res://tiles/::1786414491
-tiles.png::CompressedTexture2D::9110094540641060525::1786414461::1786414491::1::::<><><>0<>0<>1371088cdc0de53c8fedc7db997befff<>res://.godot/imported/tiles.png-c896668944bf22074c8d621d670bc5dd.ctex::
-::res://Vela/::1786414491
-pixil-frame-0 (6).png::CompressedTexture2D::5111113424586995756::1786414461::1786414491::1::::<><><>0<>0<>948a37079232d4a4b02b7590fa29a7d5<>res://.godot/imported/pixil-frame-0 (6).png-f0b07b71f51a25d0a16b642e0d7e02c1.ctex::
-pixil-frame-0.png::CompressedTexture2D::3050917193823173547::1786414461::1786414491::1::::<><><>0<>0<>23f51f5812c81c848c9dd1aa29fe4d44<>res://.godot/imported/pixil-frame-0.png-7c4cfd66bdfb752712989c29193d9f8a.ctex::
-static_body_2d.gd::GDScript::4509445582018708300::1786414461::0::1::::<>StaticBody2D<><>0<>0<><>::
-vela 2.png::CompressedTexture2D::7177791915072710649::1786414461::1786414491::1::::<><><>0<>0<>e7cf4c65ba0a9833a8fd5e35a8705230<>res://.godot/imported/vela 2.png-3e00ba2495dab544c3a897ee9bc47404.ctex::
-Vela.png::CompressedTexture2D::3031041125716739177::1786414461::1786414491::1::::<><><>0<>0<>2fb28a7866c19c3f7d2daeabc82cd6ca<>res://.godot/imported/Vela.png-f9cb119f7f56b745bf8e10bf64668315.ctex::
-Vela.tscn::PackedScene::4071936929304595402::1786414461::0::1::::<><><>0<>0<><>::uid://b5in563u6ntua::::res://Vela/static_body_2d.gd<>uid://dai8gi466d5gn::::res://Vela/vela 2.png<>uid://ce24j52u1abu7::::res://Vela/pixil-frame-0 (6).png<>uid://bjgi2macgiqrh::::res://Vela/Vela.png
+puntaje.gd::GDScript::527685530398002752::1786500246::0::1::::<>RefCounted<><>0<>0<><>::
+::res://Player/Cuerpo/::1787366655
+Corazon.tscn::PackedScene::6173300831650801061::1787366556::0::1::::<><><>0<>0<><>::uid://n87cyngsmaif::::res://Player/Sprites/corazon.png<>uid://schmyeg88kbf::::res://Player/Codigos/Corazones.gd<>uid://dd3k22nv2jdbm::::res://Player/Sprites/nocorazon.png
+flechaPlayer.tscn::PackedScene::3936117997613688042::1787366027::0::1::::<><><>0<>0<><>::uid://d0okit4qo0chx::::res://Player/Codigos/flecha_player.gd<>uid://ckqf20vogglub::::res://Enemigos/Minions/Flechas/fuegito.png
+Player.tscn::PackedScene::617622435748030058::1787366655::0::1::::<><><>0<>0<><>::uid://il650jo3m4u4::::res://Player/Codigos/Jugador.gd<>uid://lhpo51qsn6by::::res://Player/Sprites/portavelas_walk.png<>uid://ct7nmlmgjcv4x::::res://Player/Cuerpo/Corazon.tscn<>uid://6i2m5lk7dvxo::::res://Player/Sprites/portavelas_attack1.png<>uid://bp71wfk82vyve::::res://Player/Sprites/portavelas_idle.png<>uid://bgihqqn6jqhy3::::res://Player/Alma/alma.tscn<>uid://dnbgl5fb6lxro::::res://Player/Sprites/shift.png<>uid://dhv5pcr1xs4sc::::res://Player/Sprites/guardar.png<>uid://btfgsnmytor2b::::res://Assets/Tipografias/ThaleahFat.ttf
+::res://Player/Sprites/::1787366660
+Alma2.png::CompressedTexture2D::8302794364783271088::1786919142::1787365364::1::::<><><>0<>0<>c4b55957f3444042c999b885d561b99e<>res://.godot/imported/Alma2.png-a98fe74a5aca1014b9cc3e07f96863e3.ctex::
+Alma.png::CompressedTexture2D::7919433044569779995::1786904990::1787365359::1::::<><><>0<>0<>252708d4ba4c362c0236b1c133fcd40b<>res://.godot/imported/Alma.png-aec3c396099671e45b5b43425eba2ab7.ctex::
+corazon.png::CompressedTexture2D::982527229474729621::1786493509::1787365325::1::::<><><>0<>0<>534a1b0c3dcd608154432429835a87e9<>res://.godot/imported/corazon.png-8d1b2349db998e10640a94e9c1b700ff.ctex::
+guardar.png::CompressedTexture2D::7695784318593526234::1786414461::1787365993::1::::<><><>0<>0<>335d94cf88736229bed709e3d629e439<>res://.godot/imported/guardar.png-ce1a3bee1111bd8546517f251cf5fb81.ctex::
+nocorazon.png::CompressedTexture2D::7428287984673664402::1786493509::1787365336::1::::<><><>0<>0<>173c10837a17b34171054a4ef7af875f<>res://.godot/imported/nocorazon.png-048588a85848e6d10b28d9dc6650fa5c.ctex::
+portavelas_attack1.png::CompressedTexture2D::2194031556333648264::1786414461::1787365262::1::::<><><>0<>0<>9551114c2e4f17cc4d75eeec78f893f1<>res://.godot/imported/portavelas_attack1.png-d6191a0b549bb66317b83b00402ea014.ctex::
+portavelas_idle.png::CompressedTexture2D::3506931635272434214::1786414461::1787365264::1::::<><><>0<>0<>537efe9fdb786874bb8f687e74d395d7<>res://.godot/imported/portavelas_idle.png-1f7167efe8b0eb6a375d199404700bc0.ctex::
+portavelas_walk.png::CompressedTexture2D::787465296919926974::1786414461::1787365267::1::::<><><>0<>0<>9e89f81f1a1ac5f78e46be12733ea4f3<>res://.godot/imported/portavelas_walk.png-d6a01a68856aa4c92e504bfd48c2b03e.ctex::
+shift.png::CompressedTexture2D::8074166925329184340::1786414461::1787366655::1::::<><><>0<>0<>fd1b5bb22b2832a44b4db580dbbe00c8<>res://.godot/imported/shift.png-b0565ec5c18f94db4ffe6e9eafb6d8db.ctex::
+vida.png::CompressedTexture2D::7598844981161081409::1786492366::1787366660::1::::<><><>0<>0<>84fd3d495d0d5994c09948c32e5d1b83<>res://.godot/imported/vida.png-198b6845f0892a5c62decb1433989e48.ctex::
+::res://Sistemas/::1787366735
+portal.gd::GDScript::2581998330957694697::1786662472::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+portal.png::CompressedTexture2D::3087849788880074363::1786499769::1787366511::1::::<><><>0<>0<>4fd54a822176eb0d993e825cb9f16422<>res://.godot/imported/portal.png-dd37dbc3bede671ae96e2b8518dcbb1f.ctex::
+Sala_principal.tscn::PackedScene::1507472546607786284::1787366599::0::1::::<><><>0<>0<><>::uid://i2gfe47irk8y::::res://Player/Cuerpo/Player.tscn<>uid://t17j1fhrg3k5::::res://Objetos/mapa.tscn<>uid://dxquogb7qnmfb::::res://escenas/Hud/Sprites/Fondo2.png<>uid://byaqhaq0djam1::::res://Objetos/Vela/Vela.tscn<>uid://dun8ow2w0y2bm::::res://Sistemas/Spawner/spawner.tscn<>uid://d2186qs05xti0::::res://Assets/tiles/tiles.png
+sonidos.gd::GDScript::58347224780236532::1787366735::0::1::::<>Node<><>0<>0<><>::
+::res://Sistemas/Mejoras/::1787365479
+mejora_damage.png::CompressedTexture2D::1598844603946687336::1786660488::1787365479::1::::<><><>0<>0<>f68ae581db7baa1a84f955929eff4873<>res://.godot/imported/mejora_damage.png-979d81b3c48861e408db6a87d22d7883.ctex::
+mejora_score.png::CompressedTexture2D::1617084935116003792::1786660488::1787365479::1::::<><><>0<>0<>e9a6d4d1a852a2e58aee5678e37235d4<>res://.godot/imported/mejora_score.png-27dc654d6a031096d7f083e89e8510b3.ctex::
+mejora_speed.png::CompressedTexture2D::4092145082231769275::1786660488::1787365479::1::::<><><>0<>0<>7c0fef6f9e596569b1c5e114d2324b23<>res://.godot/imported/mejora_speed.png-4016b954f3608e63c9bc5ffaf741124f.ctex::
+::res://Sistemas/Spawner/::1787366530
+spawner.gd::GDScript::9173786090417758065::1786666338::0::1::::<>Node2D<><>0<>0<><>::
+spawner.tscn::PackedScene::8591905694776074474::1787366530::0::1::::<><><>0<>0<><>::uid://d3x36fueui8or::::res://Sistemas/Spawner/spawner.gd<>uid://cbbpl1ctnca75::::res://Enemigos/Minions/Golem/enemigo1.tscn<>uid://coctpp4qpo7nm::::res://Enemigos/Minions/Mago/mago.tscn<>uid://1kbirh2j4lpm::::res://Enemigos/Minions/Hormiguilla/hormiga.tscn<>uid://dpcaemlisab1h::::res://Enemigos/Minions/Escudo/escudo.tscn<>uid://bj81o1yu7f5n8::::res://Sistemas/portal.png<>uid://bc10eum5pk64t::::res://Sistemas/portal.gd<>uid://btfgsnmytor2b::::res://Assets/Tipografias/ThaleahFat.ttf<>uid://xblfgowww7pc::::res://Sistemas/Mejoras/mejora_score.png<>uid://w1q0caltqwhs::::res://Sistemas/Mejoras/mejora_damage.png<>uid://bykjbctmj65wp::::res://Sistemas/Mejoras/mejora_speed.png

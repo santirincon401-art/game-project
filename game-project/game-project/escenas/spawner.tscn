@@ -1,19 +1,21 @@
-[gd_scene format=3 uid="uid://d3i3pu8cxgsqp"]
+[gd_scene format=3 uid="uid://hvrk3o56gdjl"]
 
-[ext_resource type="Script" uid="uid://d3x36fueui8or" path="res://spawner.gd" id="1_yp5lu"]
-[ext_resource type="PackedScene" uid="uid://c11cugnwonpis" path="res://escenas/enemigo1.tscn" id="2_mcln3"]
+[ext_resource type="Script" uid="uid://d3x36fueui8or" path="res://Sistemas/Spawner/spawner.gd" id="1_3hm3f"]
 [ext_resource type="Texture2D" uid="uid://cw0ny70tcnyki" path="res://icon.svg" id="2_ttk4a"]
-[ext_resource type="PackedScene" uid="uid://cpor60ag52ni5" path="res://Enemigos(escenas)/mago.tscn" id="3_bphdf"]
-[ext_resource type="PackedScene" uid="uid://q7w545oyigav" path="res://Enemigos(escenas)/hormiga.tscn" id="4_7ocbr"]
-[ext_resource type="Texture2D" uid="uid://byq51t1jjad5x" path="res://pixil-frame-0 (13).png" id="5_mv5bd"]
-[ext_resource type="PackedScene" uid="uid://b74d00djjku7a" path="res://Enemigos(escenas)/escudo.tscn" id="5_vnemq"]
+[ext_resource type="PackedScene" uid="uid://c11cugnwonpis" path="res://Enemigos/Minions/Golem/Golem.tscn" id="2_vnemq"]
+[ext_resource type="PackedScene" uid="uid://coctpp4qpo7nm" path="res://Enemigos/Minions/Mago/mago.tscn" id="3_ltp5t"]
+[ext_resource type="PackedScene" uid="uid://1kbirh2j4lpm" path="res://Enemigos/Minions/Hormiguilla/hormiga.tscn" id="4_s7g2l"]
+[ext_resource type="PackedScene" uid="uid://dpcaemlisab1h" path="res://Enemigos/Minions/Escudo/escudo.tscn" id="5_l16px"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o4xep"]
+load_path = "res://.godot/imported/pixil-frame-0 (13).png-217b51358287980abb0f47e2466c5391.ctex"
 
 [node name="Spawner" type="Node2D" unique_id=1206312556]
-script = ExtResource("1_yp5lu")
-escena_golem = ExtResource("2_mcln3")
-escena_mago = ExtResource("3_bphdf")
-escena_hormiga = ExtResource("4_7ocbr")
-escena_escudo = ExtResource("5_vnemq")
+script = ExtResource("1_3hm3f")
+escena_golem = ExtResource("2_vnemq")
+escena_mago = ExtResource("3_ltp5t")
+escena_hormiga = ExtResource("4_s7g2l")
+escena_escudo = ExtResource("5_l16px")
 
 [node name="Spawn1" type="Marker2D" parent="." unique_id=247423970]
 position = Vector2(-1, -694)
@@ -34,7 +36,7 @@ position = Vector2(-836, -11)
 [node name="Icon" type="Sprite2D" parent="." unique_id=391233236]
 position = Vector2(-844, -6)
 scale = Vector2(2.59375, 2.375)
-texture = ExtResource("5_mv5bd")
+texture = SubResource("CompressedTexture2D_o4xep")
 
 [node name="Icon2" type="Sprite2D" parent="." unique_id=2054298024]
 position = Vector2(4, -695)

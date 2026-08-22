@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cp3wf2tlxiu0o"]
+
+[ext_resource type="PackedScene" uid="uid://ca8gcafq06ivb" path="res://Objetos/ladrillo.tscn" id="1_2j01p"]
+[ext_resource type="PackedScene" uid="uid://i2gfe47irk8y" path="res://Player/Cuerpo/Player.tscn" id="2_vdwn6"]
+[ext_resource type="PackedScene" uid="uid://yedsvonct8xj" path="res://Enemigos/Minions/Demonios/Lloron/lloron.tscn" id="5_a1c5d"]
+
+[node name="Node2D" type="Node2D" unique_id=1567527758]
+
+[node name="Ladrillo" parent="." unique_id=1063966909 instance=ExtResource("1_2j01p")]
+position = Vector2(470, 142)
+
+[node name="Jugador" parent="." unique_id=528975174 instance=ExtResource("2_vdwn6")]
+position = Vector2(102, 134)
+
+[node name="CharacterBody2D" parent="." unique_id=324398366 instance=ExtResource("5_a1c5d")]
+position = Vector2(-504, -287)
+
+[node name="CharacterBody2D" parent="CharacterBody2D" unique_id=1943752025 instance=ExtResource("5_a1c5d")]
+position = Vector2(-81, 612)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D" unique_id=2026296072 instance=ExtResource("5_a1c5d")]
+position = Vector2(417, 688)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=1807488280 instance=ExtResource("5_a1c5d")]
+position = Vector2(840, 38)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=1289129299 instance=ExtResource("5_a1c5d")]
+position = Vector2(623, -92)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=2089826951 instance=ExtResource("5_a1c5d")]
+position = Vector2(-1923, -1685)

@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://1kbirh2j4lpm"]
+
+[ext_resource type="Script" uid="uid://dbjxc8p7egb4a" path="res://Enemigos/Minions/Hormiguilla/hormigilla.gd" id="1_dbv8r"]
+[ext_resource type="Texture2D" uid="uid://o7rs207rbkkx" path="res://Enemigos/Minions/Hormiguilla/Hormiga2.png" id="2_dbv8r"]
+[ext_resource type="Texture2D" uid="uid://c62raaop7ct0n" path="res://Enemigos/Minions/Hormiguilla/Hormiga1.png" id="3_dbv8r"]
+[ext_resource type="Texture2D" uid="uid://qhmmy8r1w3b" path="res://Enemigos/Minions/Hormiguilla/Explo1.png" id="4_dbv8r"]
+[ext_resource type="Texture2D" uid="uid://cno5vrpbwrpe4" path="res://Enemigos/Minions/Hormiguilla/Explo2.png" id="5_yk0hg"]
+[ext_resource type="Texture2D" uid="uid://8vd5b4c1tx0e" path="res://Enemigos/Minions/Hormiguilla/Explo3.png" id="6_erw14"]
+[ext_resource type="Texture2D" uid="uid://dj66eie8vi7yf" path="res://Enemigos/Minions/Hormiguilla/Explo4.png" id="7_dqmf6"]
+[ext_resource type="Texture2D" uid="uid://4tjunjb0k1ul" path="res://Enemigos/Minions/Hormiguilla/Explo5.png" id="8_8kilv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rrn34"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dbv8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dbv8r")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_dbv8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yk0hg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_erw14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dqmf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8kilv")
+}],
+"loop": 0,
+"name": &"pum",
+"speed": 18.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iwtyl"]
+radius = 63.0317
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dpllr"]
+radius = 595.142
+
+[node name="hormiga" type="CharacterBody2D" unique_id=1755502052 groups=["bum", "pum"]]
+script = ExtResource("1_dbv8r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1664825467]
+position = Vector2(-16.5, -16.42)
+scale = Vector2(5.28125, 4.84875)
+sprite_frames = SubResource("SpriteFrames_rrn34")
+frame_progress = 0.080281
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1071577692]
+position = Vector2(-2, -1)
+shape = SubResource("CircleShape2D_iwtyl")
+
+[node name="DetectorRango" type="Area2D" parent="." unique_id=1686689834]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectorRango" unique_id=1232408740]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_dpllr")
+
+[connection signal="body_entered" from="DetectorRango" to="." method="_on_detector_rango_body_entered"]
+[connection signal="body_exited" from="DetectorRango" to="." method="_on_detector_rango_body_exited"]

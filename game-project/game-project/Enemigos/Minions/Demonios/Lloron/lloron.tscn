@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://yedsvonct8xj"]
+
+[ext_resource type="Script" uid="uid://cijtt51fj0qj4" path="res://Enemigos/Minions/Demonios/Lloron/lloron.gd" id="1_v8b24"]
+[ext_resource type="Texture2D" uid="uid://bvwhibyasx2tk" path="res://Enemigos/Minions/Demonios/demonio.png" id="2_fjpsw"]
+[ext_resource type="PackedScene" uid="uid://ckru08qn7pwrc" path="res://Enemigos/Minions/Flechas/fuego_azul.tscn" id="2_y0rof"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0rof"]
+atlas = ExtResource("2_fjpsw")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvtfu"]
+atlas = ExtResource("2_fjpsw")
+region = Rect2(64, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5m8mv"]
+atlas = ExtResource("2_fjpsw")
+region = Rect2(128, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrekm"]
+atlas = ExtResource("2_fjpsw")
+region = Rect2(192, 192, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hxi4w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0rof")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvtfu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5m8mv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrekm")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tjiqv"]
+radius = 84.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_exkwe"]
+radius = 429.391
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=324398366 groups=["enemigos"]]
+script = ExtResource("1_v8b24")
+escena_proyectil = ExtResource("2_y0rof")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1444733900]
+position = Vector2(1.0000153, 0)
+scale = Vector2(2.57031, 2.60937)
+sprite_frames = SubResource("SpriteFrames_hxi4w")
+frame_progress = 0.8710171
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=664648259]
+shape = SubResource("CircleShape2D_tjiqv")
+
+[node name="DetectorRango" type="Area2D" parent="." unique_id=1065759866]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectorRango" unique_id=308415643]
+position = Vector2(1, -1)
+shape = SubResource("CircleShape2D_exkwe")
+
+[node name="Timer" type="Timer" parent="." unique_id=581672848 groups=["enemigos"]]
+wait_time = 0.305
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=840542233]
+gizmo_extents = 0.0
+
+[connection signal="body_entered" from="DetectorRango" to="." method="_on_detector_rango_body_entered"]
+[connection signal="body_exited" from="DetectorRango" to="." method="_on_detector_rango_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

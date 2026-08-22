@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://ckru08qn7pwrc"]
+
+[ext_resource type="Script" uid="uid://34rj85r1asyl" path="res://Enemigos/Minions/Flechas/fuego_azul.gd" id="1_lo50v"]
+[ext_resource type="Texture2D" uid="uid://bvwhibyasx2tk" path="res://Enemigos/Minions/Demonios/demonio.png" id="2_l1p5b"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mi01x"]
+atlas = ExtResource("2_l1p5b")
+region = Rect2(64, 144, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bafti"]
+atlas = ExtResource("2_l1p5b")
+region = Rect2(96, 144, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a7fj5"]
+atlas = ExtResource("2_l1p5b")
+region = Rect2(128, 144, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j1oof"]
+atlas = ExtResource("2_l1p5b")
+region = Rect2(160, 144, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kefl2"]
+atlas = ExtResource("2_l1p5b")
+region = Rect2(0, 144, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3vm7a"]
+atlas = ExtResource("2_l1p5b")
+region = Rect2(32, 144, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_853w4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mi01x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bafti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a7fj5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j1oof")
+}],
+"loop": 1,
+"name": &"choque",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kefl2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3vm7a")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c6smh"]
+radius = 13.038404
+
+[node name="Fuego_azul" type="Area2D" unique_id=1365471170]
+script = ExtResource("1_lo50v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=910667593]
+position = Vector2(0, 7)
+scale = Vector2(0.9375, 0.875)
+sprite_frames = SubResource("SpriteFrames_853w4")
+animation = &"choque"
+frame_progress = 0.1807281
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1514292887]
+shape = SubResource("CircleShape2D_c6smh")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

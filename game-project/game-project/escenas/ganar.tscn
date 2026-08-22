@@ -1,32 +1,32 @@
-[gd_scene load_steps=13 format=3 uid="uid://dct2hm1q5gnh7"]
+[gd_scene format=3 uid="uid://cbmevysthuiir"]
 
-[ext_resource type="Script" uid="uid://dmb724fjw45gn" path="res://escenas/jugar.gd" id="1_5q0ni"]
-[ext_resource type="Texture2D" uid="uid://bfsah223jubcf" path="res://Sprite-0003.png" id="2_5q0ni"]
-[ext_resource type="Script" uid="uid://c2srkbn8nb01g" path="res://iralmenu.gd" id="2_wypsw"]
-[ext_resource type="Texture2D" uid="uid://boja765fr6w3h" path="res://mas menu.png" id="3_5t8hq"]
+[ext_resource type="Script" uid="uid://dmb724fjw45gn" path="res://escenas/Hud/Codigos/jugar.gd" id="1_5q0ni"]
+[ext_resource type="Texture2D" uid="uid://bfsah223jubcf" path="res://escenas/Hud/Sprites/Botones.png" id="2_5t8hq"]
+[ext_resource type="Texture2D" uid="uid://boja765fr6w3h" path="res://escenas/Hud/Sprites/mas menu.png" id="3_wofhx"]
+[ext_resource type="Script" uid="uid://c2srkbn8nb01g" path="res://escenas/Hud/Codigos/iralmenu.gd" id="4_3shek"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nl72e"]
-atlas = ExtResource("2_5q0ni")
+atlas = ExtResource("2_5t8hq")
 region = Rect2(0, 0, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h6p0w"]
-atlas = ExtResource("3_5t8hq")
+atlas = ExtResource("3_wofhx")
 region = Rect2(0, 0, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8s4ut"]
-atlas = ExtResource("3_5t8hq")
+atlas = ExtResource("3_wofhx")
 region = Rect2(0, 64, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5gtll"]
-atlas = ExtResource("2_5q0ni")
+atlas = ExtResource("2_5t8hq")
 region = Rect2(128, 0, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oj1i8"]
-atlas = ExtResource("3_5t8hq")
+atlas = ExtResource("3_wofhx")
 region = Rect2(128, 64, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2dstv"]
-atlas = ExtResource("3_5t8hq")
+atlas = ExtResource("3_wofhx")
 region = Rect2(128, 0, 128, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wofhx"]
@@ -41,7 +41,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8s4ut")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -55,7 +55,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2dstv")
 }],
-"loop": true,
+"loop": 1,
 "name": &"dormir",
 "speed": 5.0
 }]
@@ -68,11 +68,11 @@ outline_color = Color(1, 0.419608, 0.176471, 1)
 shadow_size = 41
 shadow_color = Color(0.882353, 0, 0, 1)
 
-[node name="Ganar" type="Node2D"]
+[node name="Ganar" type="Node2D" unique_id=55260805]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1427571511]
 
-[node name="Jugar" type="Button" parent="CanvasLayer"]
+[node name="Jugar" type="Button" parent="CanvasLayer" unique_id=2147295373]
 offset_left = 399.0
 offset_top = 308.0
 offset_right = 762.0
@@ -80,20 +80,20 @@ offset_bottom = 384.0
 text = "Play again"
 script = ExtResource("1_5q0ni")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Jugar"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Jugar" unique_id=106110926]
 position = Vector2(175, 39)
 scale = Vector2(2.82812, 2.875)
 sprite_frames = SubResource("SpriteFrames_wofhx")
 
-[node name="Salir" type="Button" parent="CanvasLayer"]
+[node name="Salir" type="Button" parent="CanvasLayer" unique_id=76916183]
 offset_left = 399.0
 offset_top = 405.0
 offset_right = 760.0
 offset_bottom = 491.0
 text = "Go to the menu"
-script = ExtResource("2_wypsw")
+script = ExtResource("4_3shek")
 
-[node name="Label" type="Label" parent="CanvasLayer"]
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=998300032]
 offset_left = 239.0
 offset_top = 70.0
 offset_right = 1205.0
