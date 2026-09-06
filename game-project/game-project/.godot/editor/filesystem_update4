@@ -1,1 +1,3 @@
-res://Player/Codigos/Jugador.gd
+res://Enemigos/Jefes/jefeFinal/maquina_de_estados.gd
+res://Enemigos/Jefes/jefeFinal/jefe_final.tscn
+res://escenas/Prueba/Jefeprueba.tscn

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://1v16v6lsp0ul"]
+
+[ext_resource type="PackedScene" uid="uid://i2gfe47irk8y" path="res://Player/Cuerpo/Player.tscn" id="1_bewca"]
+[ext_resource type="PackedScene" uid="uid://kqlialt6mdul" path="res://Enemigos/Jefes/jefeFinal/jefe_final.tscn" id="2_3m0nn"]
+
+[node name="Jefe" type="Node2D" unique_id=321708925]
+
+[node name="Jugador" parent="." unique_id=528975174 instance=ExtResource("1_bewca")]
+position = Vector2(303, 259)
+
+[node name="CharacterBody2D" parent="." unique_id=1219972170 instance=ExtResource("2_3m0nn")]
+position = Vector2(880, 280)
