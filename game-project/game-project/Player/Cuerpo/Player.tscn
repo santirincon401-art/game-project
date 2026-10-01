@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://dnbgl5fb6lxro" path="res://Player/Sprites/shift.png" id="5_cxr5p"]
 [ext_resource type="Texture2D" uid="uid://dhv5pcr1xs4sc" path="res://Player/Sprites/guardar.png" id="5_tdg3f"]
 [ext_resource type="FontFile" uid="uid://btfgsnmytor2b" path="res://Assets/Tipografias/ThaleahFat.ttf" id="7_dtqjt"]
+[ext_resource type="Texture2D" uid="uid://yqsh2hrmornl" path="res://Player/Sprites/portavelas_hammer.png" id="8_j7601"]
+[ext_resource type="Texture2D" uid="uid://b6m1fw4ane8nt" path="res://Player/Sprites/portavelas_hammerwalk.png" id="9_6p572"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ddoul"]
 radius = 60.0
@@ -97,6 +99,54 @@ region = Rect2(100, 0, 100, 100)
 atlas = ExtResource("5_tdg3f")
 region = Rect2(200, 0, 100, 100)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_6p572"]
+atlas = ExtResource("8_j7601")
+region = Rect2(0, 0, 156, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h8cbc"]
+atlas = ExtResource("8_j7601")
+region = Rect2(156, 0, 156, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_an12i"]
+atlas = ExtResource("8_j7601")
+region = Rect2(312, 0, 156, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16erp"]
+atlas = ExtResource("8_j7601")
+region = Rect2(468, 0, 156, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_au74a"]
+atlas = ExtResource("8_j7601")
+region = Rect2(624, 0, 156, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74rat"]
+atlas = ExtResource("8_j7601")
+region = Rect2(780, 0, 156, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6fx3"]
+atlas = ExtResource("8_j7601")
+region = Rect2(936, 0, 156, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c84yh"]
+atlas = ExtResource("8_j7601")
+region = Rect2(1092, 0, 156, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60o1y"]
+atlas = ExtResource("9_6p572")
+region = Rect2(0, 0, 59, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0ia8"]
+atlas = ExtResource("9_6p572")
+region = Rect2(59, 0, 59, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rpegn"]
+atlas = ExtResource("9_6p572")
+region = Rect2(118, 0, 59, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6551"]
+atlas = ExtResource("9_6p572")
+region = Rect2(177, 0, 59, 93)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_tdg3f"]
 atlas = ExtResource("5_cxr5p")
 region = Rect2(0, 0, 100, 100)
@@ -127,7 +177,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_0j2ni")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"Walk",
 "speed": 9.0
 }, {
@@ -152,7 +202,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"ataque",
-"speed": 15.0
+"speed": 17.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -197,7 +247,53 @@ animations = [{
 }],
 "loop": 0,
 "name": &"guardar",
-"speed": 9.0
+"speed": 14.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6p572")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h8cbc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_an12i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16erp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_au74a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74rat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6fx3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c84yh")
+}],
+"loop": 0,
+"name": &"hammer",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60o1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0ia8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rpegn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6551")
+}],
+"loop": 0,
+"name": &"hammer_walk",
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -249,7 +345,9 @@ shape = SubResource("CircleShape2D_ddoul")
 position = Vector2(3, -18)
 scale = Vector2(2.41, 2.15)
 sprite_frames = SubResource("SpriteFrames_3mea3")
-animation = &"muerto"
+animation = &"hammer"
+frame = 7
+frame_progress = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=1516740577 groups=["jugador"]]
 zoom = Vector2(0.5, 0.5)

@@ -24,6 +24,7 @@ extends Node2D
 # =========================================================
 
 @export var dano: int = 3
+@export var danoAJefe: int = 1
 @export var vida_maxima: int = 100
 @export var velocidad: float = 300.0
 
@@ -677,11 +678,13 @@ func estado_death() -> void:
 	beamArea2d.monitoring = false
 
 	beam.visible = false
+	animated_sprite.play("death")
 
 	# Detener animación
+	
+	await animated_sprite.animation_finished
 	animated_sprite.stop()
-
-
+	jefe.free()
 # =========================================================
 # DETECCIÓN - ENTRA EL JUGADOR
 # =========================================================
@@ -859,10 +862,12 @@ func _on_daño_beam_body_entered(
 
 # =========================================================
 # HURTBOX
-# =========================================================
 
-func _on_hurtbox_area_entered(
-	area: Area2D
-) -> void:
 
-	pass
+func _on_hurtbox_area_entered(area: Area2D) -> void:
+	if area.name != "Area2D":
+		return
+	var jugador = get_tree().get_first_node_in_group("jugador")
+	if jugador == null:
+		return
+	recibir_dano(jugador.dano)
